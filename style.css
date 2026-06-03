@@ -34,13 +34,15 @@ h1 {
     color: var(--espuma);
     font-family: "baserio", sans-serif;
     font-size: 3rem;
+    font-weight: 300;
     line-height: 2.7rem;
 }
 
 h2 {
-    color: var(--pinguino);
+    color: var(--espuma);
+    font-family: "baserio", sans-serif;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 100;
     line-height: 2.2rem;
 }
 
@@ -60,7 +62,7 @@ h4 {
 p {
     color: var(--pinguino);
     text-wrap-style: balance;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 
 header {
@@ -177,4 +179,93 @@ footer {
 #galeria {
     background-color: var(--espuma);
     padding: 75px 0px;
+}
+
+.pingu-curiosidades {
+    background-color: var(--piedrita);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.pingu-svg {
+    height: 150px;
+    width: auto;
+}
+
+.globo {
+    border: 2px solid var(--pinguino);
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.globo::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--pinguino);
+    position: absolute;
+    left: -50px;
+    top: 50%;
+}
+
+.sabias,
+.globo {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.pingu-curiosidades:hover .sabias,
+.pingu-curiosidades:hover .globo {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .titulos {
+        padding: 20px 0px;
+    }
+
+    .pingu-curiosidades {
+        padding: 15px 0px;
+    }
+
+    .pingu-svg {
+        height: 120px;
+    }
+
+    .globo {
+        max-width: 65%;
+        padding: 10px;
+        font-size: 0.9rem;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .globo::before {
+        width: 25px;
+        left: -25px;
+    }
+
+    .sabias {
+        display: none;
+    }
+
 }
