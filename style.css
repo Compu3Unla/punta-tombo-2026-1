@@ -52,7 +52,7 @@ h3 {
 }
 
 h4 {
-    color: var(--pinguino);
+    color: var(--pinguino); /* habemus h4? non ricordo chamigas */
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -61,6 +61,103 @@ p {
     color: var(--pinguino);
     text-wrap-style: balance;
     line-height: 1rem;
+}
+
+header {
+   background-color: #090625;
+   padding: 20px 80px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.video-heroe {
+   background-color: var(--espuma);
+   padding: 20px 80px;
+}
+
+.h1 {
+   background-color: var(--oceano);
+   padding: 20px 80px;
+}
+
+.acordeon {
+   background-color: var(--espuma);
+   padding: 20px 80px;
+}
+
+.clima {
+   background-color: var(--magallanes);
+   padding: 20px 80px;
+}
+
+.carrousel {
+   background-color: var(--espuma);
+   padding: 20px 80px;
+}
+
+footer {
+   background-color: var(--pinguino);
+   padding: 20px 80px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer-logo,
+.footer-redes,
+.footer-copy {
+   flex: 1;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer-logo img {
+   width: 40px;
+   height: 40px;
+   margin-bottom: 10px;
+}
+
+.footer-redes ul {
+   list-style: none;
+   padding: 0;
+   margin: 0 0 10px 0;
+
+   display: flex;
+   gap: 16px;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-redes img {
+   width: 40px;
+   height: 40px;
+   display: block;
+}
+
+.footer-logo p,
+.footer-redes p,
+.footer-copy p {
+   margin: 0;
+   color: var(--espuma);
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+.footer-copy {
+   justify-content: center;
 }
 
 /*GALERIA*/
