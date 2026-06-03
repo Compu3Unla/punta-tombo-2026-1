@@ -1,1 +1,83 @@
+/* CSS Document */
+@charset "utf-8";
 
+:root {
+    --pinguino: rgb(20, 17, 39);
+    --espuma: rgb(243, 243, 243);
+    --oceano: rgb(71, 180, 210);
+    --magallanes: rgb(244, 165, 165);
+    --piedrita: rgb(169, 137, 115);
+}
+
+/* configuraciones generales */
+
+@font-face {
+    font-family: 'baserio';
+    src: url('./fonts/Baserio-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: "archivo", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--espuma);
+    font-family: "baserio", sans-serif;
+    font-size: 3rem;
+    line-height: 2.7rem;
+}
+
+h2 {
+    color: var(--pinguino);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+h3 {
+    color: var(--pinguino);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+h4 {
+    color: var(--pinguino);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+p {
+    color: var(--pinguino);
+    text-wrap-style: balance;
+    line-height: 1rem;
+}
+
+/*GALERIA*/
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--piedrita);
+    padding: 75px 0px;
+}
+
+.titulos h3 {
+    color: var(--espuma);
+}
+
+#galeria {
+    background-color: var(--espuma);
+    padding: 75px 0px;
+}
