@@ -39,15 +39,21 @@
          <p>Espacio para el acordeón o solapas</p>
       </section>
       <section class="clima">
-         <a class="weatherwidget-io" href="https://forecast7.com/es/n43d29n65d11/chubut-province/"
-            data-label_1="Punta Tombo" data-label_2="Chubut" data-font="Archivo" data-icons="Climacons Animated"
-            data-theme="original" data-basecolor="#F4A5A5" data-textcolor="#F3F3F3" data-highcolor="#141127"
-            data-lowcolor="#F3F3F3" data-suncolor="#141127" data-mooncolor="#F3F3F3" data-cloudcolor="#141127"
-            data-cloudfill="#47B4D2" data-raincolor="#47B4D2" data-snowcolor="#F3F3F3">Punta Tombo Chubut</a>
-         <script>
-            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-         </script>
-      </section>
+
+   <div class="clima-info">
+      <img src="img/svg/pingu-invierno.svg" alt="Imagen de Tombito">
+      <h2>Tombito te muestra el clima actual</h2>
+   </div>
+
+   <div class="clima-widget">
+      <a class="weatherwidget-io" href="https://forecast7.com/es/n43d29n65d11/chubut-province/" data-label_1="Punta Tombo" data-label_2="Chubut" data-font="Archivo" data-icons="Climacons Animated" data-theme="original" data-basecolor="#f4a5a5" data-highcolor="#141127" data-lowcolor="#f3f3f3" data-suncolor="#141127" data-mooncolor="#f3f3f3" data-cloudcolor="#141127" data-cloudfill="#47b4d2" data-raincolor="#47b4d2" data-snowcolor="#f3f3f3" >Punta Tombo Chubut</a>
+   </div>
+
+</section>
+
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
       <section class="carrousel">
          <div class="slider-container">
             <div class="slider">
