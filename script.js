@@ -1,3 +1,6 @@
+
+/*¨carrousel footer */
+
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.slider');
     let index = 0;
@@ -19,4 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5 segundos
     setInterval(moverSlider, 4000);
+});
+
+/* carrousel videos */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const slider = document.querySelector('.video-slider');
+    const slides = document.querySelectorAll('.video-slide');
+
+    let index = 0;
+
+    function moverSlider() {
+
+        index++;
+
+        if (index >= slides.length) {
+            index = 0;
+        }
+
+        slider.style.transform = `translateX(-${index * 33.333}%)`;
+    }
+
+    setInterval(moverSlider, 5000);
+
 });

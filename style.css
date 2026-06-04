@@ -84,11 +84,33 @@ nav {
 
 .video-heroe {
    background-color: var(--espuma);
-   padding: 20px 80px;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.video-slider {
+    display: flex;
+    width: 300%;
+    height: 100vh;
+    transition: transform 1s ease-in-out;
+}
+
+.video-slide {
+    width: 33.333%;
+    height: 100%;
+}
+
+.video-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .h1 {
    background-color: var(--oceano);
+   text-align: center;
    padding: 20px 80px;
 }
 
