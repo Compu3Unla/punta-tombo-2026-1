@@ -1,26 +1,86 @@
 <!doctype html>
 <html lang="es">
-   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Web Punta Tombo">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css" type="text/css">
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i">
-      <link rel="icon" href="dire de icon.xx" type="image/xx">
-      <title>Descubrí la magia de Punta Tombo</title>
-   </head>
-   <body>
-	   
-	<main>
-		<section class="pingu-curiosidades">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="description" content="Web Punta Tombo">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" type="text/css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i">
+   <link rel="icon" href="dire de icon.xx" type="image/xx">
+   <title>Descubrí la magia de Punta Tombo</title>
+</head>
+
+<body class="contacto-body">
+
+   <main>
+      <header></header>
+
+      <section class="titulos-contacto">
+         <h1>CONTACTO PUNTA TOMBO</h1>
+         <h3>Consultanos todas tus dudas y recibí novedades. ¡Te queremos leer!</h3>
+      </section>
+
+      <section id="formulario">
+         <article id="form-contacto">
+            <form method="post" action="" target="_blank" enctype="text/plain">
+               <div class="seccion-form">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="tu nombre..." required>
+               </div>
+               <div class="seccion-form">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="E-mail" placeholder="tu email..." required>
+               </div>
+               <div class="seccion-form">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea name="mensaje" id="mensaje" placeholder="dejanos tu mensajito..."></textarea>
+               </div>
+               <input type="submit" value="Enviar" class="button-enviar">
+            </form>
+
+            <article id="contactos-utiles">
+               <h3>Contactos útiles</h3>
+               <div class="parrafos-contacto">
+                  <div>
+                     <p>Coordinación de Turismo de Trelew</p>
+                     <ul>
+                        <li>Mitre 387, Trelew</li>
+                        <li>0280-4420139/4426819</li>
+                        <li>turismo@trelew.gov.ar</li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <p>Ministerio de Turismo y Áreas Protegidas del Chubut</p>
+                     <ul>
+                        <li>9 de julio N° 280, Rawson</li>
+                        <li>0280 448-5271</li>
+                        <li>experienciachubut@gmail.com</li>
+                     </ul>
+                  </div>
+               </div>
+            </article>
+         </article>
+
+         <aside>
+            <img src="img/contacto.jpg" alt="pinguino" width="800" height="1316">
+         </aside>
+      </section>
+
+      <section class="pingu-curiosidades">
          <article class="sabias">
             <h2>¿...Lo sabías?</h2>
          </article>
          <img class="pingu-svg" src="img/svg/pingu-invierno.svg" alt="Pingüino de invierno">
          <article class="globo">
-            <p>En invierno, Punta Tombo queda casi en pausa: sin pingüinos, el paisaje revela el lado más salvaje y solitario de la Patagonia.</p>
+            <p>En invierno, Punta Tombo queda casi en pausa: sin pingüinos, el paisaje revela el lado más salvaje y
+               solitario de la Patagonia.</p>
          </article>
       </section>
-	   </main>
-   </body>
+
+      <footer></footer>
+   </main>
+</body>
+
 </html>

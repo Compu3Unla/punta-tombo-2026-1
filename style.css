@@ -54,7 +54,8 @@ h3 {
 }
 
 h4 {
-    color: var(--pinguino); /* habemus h4? non ricordo chamigas */
+    color: var(--pinguino);
+    /* habemus h4? non ricordo chamigas */
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -66,100 +67,100 @@ p {
 }
 
 header {
-   background-color: #090625;
-   padding: 20px 80px;
+    background-color: #090625;
+    padding: 20px 80px;
 }
 
 nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
-   display: flex;
-   align-items: center;
-   gap: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .video-heroe {
-   background-color: var(--espuma);
-   padding: 20px 80px;
+    background-color: var(--espuma);
+    padding: 20px 80px;
 }
 
 .h1 {
-   background-color: var(--oceano);
-   padding: 20px 80px;
+    background-color: var(--oceano);
+    padding: 20px 80px;
 }
 
 .acordeon {
-   background-color: var(--espuma);
-   padding: 20px 80px;
+    background-color: var(--espuma);
+    padding: 20px 80px;
 }
 
 .clima {
-   background-color: var(--magallanes);
-   padding: 20px 80px;
+    background-color: var(--magallanes);
+    padding: 20px 80px;
 }
 
 .carrousel {
-   background-color: var(--espuma);
-   padding: 20px 80px;
+    background-color: var(--espuma);
+    padding: 20px 80px;
 }
 
 footer {
-   background-color: var(--pinguino);
-   padding: 20px 80px;
+    background-color: var(--pinguino);
+    padding: 20px 80px;
 
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-logo,
 .footer-redes,
 .footer-copy {
-   flex: 1;
+    flex: 1;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo img {
-   width: 40px;
-   height: 40px;
-   margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .footer-redes ul {
-   list-style: none;
-   padding: 0;
-   margin: 0 0 10px 0;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
 
-   display: flex;
-   gap: 16px;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-redes img {
-   width: 40px;
-   height: 40px;
-   display: block;
+    width: 40px;
+    height: 40px;
+    display: block;
 }
 
 .footer-logo p,
 .footer-redes p,
 .footer-copy p {
-   margin: 0;
-   color: var(--espuma);
-   font-size: 0.9rem;
-   font-weight: 400;
+    margin: 0;
+    color: var(--espuma);
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .footer-copy {
-   justify-content: center;
+    justify-content: center;
 }
 
 /*GALERIA*/
@@ -226,6 +227,104 @@ footer {
     visibility: visible;
 }
 
+/*CONTACTO*/
+.contacto-body {
+    background-color: var(--magallanes);
+}
+
+.titulos-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--oceano);
+    padding: 75px 0px;
+}
+
+.titulos-contacto h3 {
+    color: var(--espuma)
+}
+
+#formulario {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-contacto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: center;
+    gap: 110px
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.seccion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+input {
+    border-radius: 10px;
+    background: var(--espuma);
+    width: 737px;
+    height: 72px;
+    padding: 20px;
+    border: none;
+}
+
+textarea {
+    width: 737px;
+    height: 280px;
+    border-radius: 10px;
+    background: var(--espuma);
+    padding: 20px;
+    border: none;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 38px;
+    color: var(--espuma);
+    background-color: var(--pinguino);
+    padding: 0px;
+    border-radius: 30px;
+}
+
+input[type="submit"]:hover {
+    color: var(--pinguino);
+    background-color: var(--oceano);
+    border: solid 2px var(--pinguino);
+}
+
+#contactos-utiles {
+    border: solid 2px var(--pinguino);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.parrafos-contacto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parrafos-contacto p {
+    font-weight: 600;
+}
 
 /*RESPONSIVE*/
 
