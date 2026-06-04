@@ -28,12 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const slider = document.querySelector('.video-slider');
     const slides = document.querySelectorAll('.video-slide');
 
     let index = 0;
 
-    function moverSlider() {
+    function cambiarVideo() {
+
+        slides[index].classList.remove('activo');
 
         index++;
 
@@ -41,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
             index = 0;
         }
 
-        slider.style.transform = `translateX(-${index * 33.333}%)`;
+        slides[index].classList.add('activo');
     }
 
-    setInterval(moverSlider, 8000);
+    setInterval(cambiarVideo, 8000);
 
 });

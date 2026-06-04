@@ -90,16 +90,34 @@ nav {
 	overflow: hidden;
 }
 
-.video-slider {
-	display: flex;
-	width: 300%;
+/* carrousel de videos */
+
+.video-heroe {
+	position: relative;
+	width: 100%;
 	height: 100vh;
-	transition: transform 0.2s ease-out;
+	overflow: hidden;
+}
+
+.video-slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .video-slide {
-	width: 33.333%;
+	position: absolute;
+	inset: 0;
+	width: 100%;
 	height: 100%;
+
+	opacity: 0;
+	transition: opacity 1.5s ease;
+}
+
+.video-slide.activo {
+	opacity: 1;
+	z-index: 2;
 }
 
 .video-slide video {
