@@ -65,6 +65,62 @@ p {
     line-height: 1.5rem;
 }
 
+/*HEADER*/
+
+header {
+    background-color: var(--pinguino);
+    padding: 15px 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.boton {
+    color: var(--espuma);
+    border: 2px solid var(--espuma);
+    border-radius: 999px;
+    padding: 10px 20px;
+    width: 160px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.boton:hover {
+    background-color: var(--magallanes);
+    color: var(--pinguino);
+    border-color: var(--magallanes);
+}
+
+#corazon {
+    height: 32px;
+    width: auto;
+}
+
+#home {
+    height: 25px;
+    width: auto;
+}
+
+#corazon,
+#home {
+    fill: var(--magallanes);
+    transition: 0.3s ease;
+}
+
+#corazon:hover,
+#home:hover {
+    fill: var(--espuma)
+}
+
 /*GALERIA*/
 
 .titulos {
@@ -153,6 +209,75 @@ p {
 .pingu-curiosidades:hover .globo {
     opacity: 1;
     visibility: visible;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--pinguino);
+    padding: 20px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo,
+.footer-redes,
+.footer-copy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-footer {
+    height: 48px;
+    width: auto;
+    fill: var(--espuma);
+    transition: 0.3s ease;
+}
+
+.boton-footer:hover {
+    fill: var(--magallanes);
+}
+
+/*ESTO EN GRIS NO SÉ SI APLICA O YA NO
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}*/
+
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.footer-redes img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}*/
+
+.footer-logo p,
+.footer-redes p,
+.footer-copy p {
+    margin: 0;
+    color: var(--espuma);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.footer-copy {
+    justify-content: center;
 }
 
 
