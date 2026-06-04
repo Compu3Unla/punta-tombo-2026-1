@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         index++;
 
         slider.style.transition = "transform 0.5s ease-in-out";
-        slider.style.transform = `translateX(-${inicio * 25}%)`;
+        slider.style.transform = `translateX(-${varias * 25}%)`;
 
         if (index >= 3) {
             setTimeout(() => {
