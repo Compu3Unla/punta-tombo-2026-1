@@ -66,23 +66,6 @@ p {
 	line-height: 1.5rem;
 }
 
-header {
-	background-color: #090625;
-	padding: 20px 80px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.menu {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-}
-
 .video-heroe {
 	background-color: var(--espuma);
 	width: 100%;
@@ -292,6 +275,61 @@ footer {
 	color: var(--espuma);
 }
 
+/*HEADER*/
+
+header {
+	background-color: var(--pinguino);
+	padding: 15px 80px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.boton {
+	color: var(--espuma);
+	border: 2px solid var(--espuma);
+	border-radius: 999px;
+	padding: 10px 20px;
+	width: 160px;
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.boton:hover {
+	background-color: var(--magallanes);
+	color: var(--pinguino);
+	border-color: var(--magallanes);
+}
+
+#corazon {
+	height: 32px;
+	width: auto;
+}
+
+#home {
+	height: 25px;
+	width: auto;
+}
+
+#corazon,
+#home {
+	fill: var(--magallanes);
+	transition: 0.3s ease;
+}
+
+#corazon:hover,
+#home:hover {
+	fill: var(--espuma)
+}
 
 /*GALERIA*/
 
@@ -305,6 +343,7 @@ footer {
 
 .titulos h3 {
 	color: var(--espuma);
+	padding-top: 25px;
 }
 
 #galeria {
@@ -312,12 +351,36 @@ footer {
 	padding: 75px 0px;
 }
 
+#fancybox {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 75px;
+	background-color: var(--espuma);
+}
+
+#fancybox a {
+	padding: 15px;
+}
+
+#fancybox a,
+#fancybox img {
+	border-radius: 15px;
+}
+
+#fancybox a {
+	overflow: hidden;
+}
+
 .pingu-curiosidades {
 	background-color: var(--piedrita);
-	display: flex;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
 	align-items: center;
-	padding: 30px 0px;
+	gap: 75px;
+	padding: 30px 0;
 }
 
 .pingu-svg {
@@ -329,18 +392,19 @@ footer {
 	border: 2px solid var(--pinguino);
 	border-radius: 20px;
 	padding: 15px;
-	max-width: 500px;
+	max-width: 350px;
+	margin-left: 20px;
 	text-align: center;
 	position: relative;
 }
 
 .globo::before {
 	content: "";
-	width: 50px;
+	width: 20px;
 	height: 2px;
 	background-color: var(--pinguino);
 	position: absolute;
-	left: -50px;
+	left: -20px;
 	top: 50%;
 }
 
@@ -457,9 +521,78 @@ input[type="submit"]:hover {
 }
 
 aside img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*FOOTER*/
+
+footer {
+	background-color: var(--pinguino);
+	padding: 20px 80px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-logo,
+.footer-redes,
+.footer-copy {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.boton-footer {
+	height: 48px;
+	width: auto;
+	fill: var(--espuma);
+	transition: 0.3s ease;
+}
+
+.boton-footer:hover {
+	fill: var(--magallanes);
+}
+
+/*ESTO EN GRIS NO SÉ SI APLICA O YA NO
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}*/
+
+.footer-redes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+}
+
+/*
+.footer-redes img {
+    width: 40px;
+    height: 40px;
     display: block;
+}*/
+
+.footer-logo p,
+.footer-redes p,
+.footer-copy p {
+	margin: 0;
+	color: var(--espuma);
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+.footer-copy {
+	justify-content: center;
 }
 
 /*RESPONSIVE*/
@@ -474,12 +607,40 @@ aside img {
 		font-size: 1rem;
 	}
 
+	/*GALERIA*/
+
 	.titulos {
 		padding: 20px 0px;
 	}
 
+	#fancybox a {
+		width: 50%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	#fancybox img {
+		width: 100%;
+		height: auto;
+	}
+
+	#fancybox a {
+		width: 50%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	#fancybox img {
+		width: 100%;
+		height: auto;
+	}
+
+	/*CURIOSIDADES*/
+
 	.pingu-curiosidades {
-		padding: 15px 0px;
+		display: flex;
+		gap: 25px;
+		padding: 15px 25px;
 	}
 
 	.pingu-svg {
@@ -487,10 +648,11 @@ aside img {
 	}
 
 	.globo {
-		max-width: 65%;
+		max-width: 100%;
 		padding: 10px;
 		font-size: 0.9rem;
 		opacity: 1;
+		margin-left: 0px;
 		visibility: visible;
 	}
 
