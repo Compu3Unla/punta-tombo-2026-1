@@ -161,6 +161,54 @@ footer {
 .footer-copy {
    justify-content: center;
 }
+/*carrousel index*/
+.carrousel {
+width: 100%;
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+.slider-container {
+    width: 100%;      
+    height: 499px; 
+    position: relative;
+    overflow: hidden; 
+}
+.slider {
+    display: flex;         
+    width: 400%;         
+    height: 100%;         
+    transition: transform 0.5s ease-in-out; 
+}
+.slide {
+    width: 25%; 
+    height: 100%; 
+    position: relative; 
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%; 
+    right: 5%; 
+    transform: translateY(-50%); /* chicas intente hacerlo con flexbox pero sino no se veia el texto */
+    text-align: right;    
+    width: auto;         
+    max-width: 40%; 
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.texto-banner p {
+    color: var(--espuma);
+}
+
 
 /*GALERIA*/
 
