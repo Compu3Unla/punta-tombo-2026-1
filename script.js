@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         slider.style.transform = `translateX(-${index * 33.333}%)`;
     }
 
-    setInterval(moverSlider, 5000);
+    setInterval(moverSlider, 8000);
 
 });
