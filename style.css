@@ -93,7 +93,7 @@ nav {
     display: flex;
     width: 300%;
     height: 100vh;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.2s ease-out;
 }
 
 .video-slide {
