@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function moverSlider() {
         index++;
 
-        slider.style.transition = "transform 0.0s ease-in-out";
-        slider.style.transform = `translateX(-${index * 25}%)`;
+        slider.style.transition = "transform 0.5s ease-in-out";
+        slider.style.transform = `translateX(-${inicio * 25}%)`;
 
         if (index >= 3) {
             setTimeout(() => {
