@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="style.css" type="text/css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
 </head>
 
 <body>
@@ -19,24 +20,94 @@
          <h1>POSTALES DE PUNTA TOMBO</h1>
          <h3>La mayor colonia continental de pingüinos de Magallanes</h3>
       </section>
-
-      <section id="galeria">
-
       </section>
-
+      <section id="fancybox">
+         <a href="img/galeria/galeria_1.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_1_thumbnail.jpg" width="350" height="350"
+               alt="Foto de una familia de pingüinos" />
+         </a>
+         <a href="img/galeria/galeria_2.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_2_thumbnail.jpg" width="350" height="350"
+               alt="Foto de una pareja de pingüinos" />
+         </a>
+         <a href="img/galeria/galeria_3.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_3_thumbnail.jpg" width="350" height="350"
+               alt="Foto primer plano de un pingüino de perfil" />
+         </a>
+         <a href="img/galeria/galeria_4.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_4_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un grupo de pingüinos discutiendo" />
+         </a>
+         <a href="img/galeria/galeria_5.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_5_thumbnail.jpg" width="350" height="350"
+               alt="Foto de una pareja de pingüinos" />
+         </a>
+         <a href="img/galeria/galeria_6.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_6_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino caminando por la rampa" />
+         </a>
+         <a href="img/galeria/galeria_7.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_7_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino en el agua" />
+         </a>
+         <a href="img/galeria/galeria_8.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_8_thumbnail.jpg" width="350" height="350"
+               alt="Foto de una mamá pingüino con sus bebés" />
+         </a>
+         <a href="img/galeria/galeria_9.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_9_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino parado en la rampa" />
+         </a>
+         <a href="img/galeria/galeria_10.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_10_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino caminando por la rampa" />
+         </a>
+         <a href="img/galeria/galeria_11.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_11_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino cuidando sus huevos" />
+         </a>
+         <a href="img/galeria/galeria_12.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_12_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino vigilando sus huevos" />
+         </a>
+         <a href="img/galeria/galeria_13.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_13_thumbnail.jpg" width="350" height="350"
+               alt="Foto de una pareja de pingüinos" />
+         </a>
+         <a href="img/galeria/galeria_14.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_14_thumbnail.jpg" width="350" height="350"
+               alt="Foto de una pareja de pingüinos abrazándose" />
+         </a>
+         <a href="img/galeria/galeria_15.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_15_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pichón de pingüino perdiendo el plumón" />
+         </a>
+         <a href="img/galeria/galeria_16.jpg" data-fancybox="gallery">
+            <img src="img/galeria/galeria_16_thumbnail.jpg" width="350" height="350"
+               alt="Foto de un pingüino dentro de su pingüinera" />
+         </a>
+      </section>
       <section class="pingu-curiosidades">
          <article class="sabias">
             <h2>¿...Lo sabías?</h2>
          </article>
          <img class="pingu-svg" src="img/svg/pingu-invierno.svg" alt="Pingüino de invierno">
          <article class="globo">
-            <p>En invierno, Punta Tombo queda casi en pausa: sin pingüinos, el paisaje revela el lado más salvaje y solitario de la Patagonia.</p>
+            <p>En invierno, Punta Tombo queda casi en pausa: sin pingüinos, el paisaje revela el lado más salvaje y
+               solitario de la Patagonia.</p>
          </article>
-      </section>
    </main>
 
    <footer>
    </footer>
+   <script src="fancybox/jquery.min.js"></script>
+   <script src="fancybox/jquery.fancybox.js"></script>
+   <script>$('[data-fancybox]').fancybox({
+         buttons: [
+            'close'
+         ]
+      })
+   </script>
 </body>
 
 </html>

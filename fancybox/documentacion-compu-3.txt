@@ -1,0 +1,47 @@
+fancybox galería
+
+usamos una librería ya armada de elementos js, hay que leerla, entenderla y modificarla a gusto
+
+JavaScript: incorpora funcionalidades
+jQuery: utiliza js, es una librería de manipulación del HTML ya escrito con elementos que necesitan interacciones del usuario (cambiar clases, ids o tags). Es vieja pero poderosa porque no hay que escribir tanto js, sólo entenderlo.
+fancybox: usa las herramientas de jQuery para hacer una galería
+
+--------
+PASO A PASO
+1.insertar en head    
+	<link rel="stylesheet" type="text/css" href="carpeta/jquery.fancybox.css">
+
+2.antes del cierre del body colocar los scripts por convención, en otro lugar no funciona
+	<script scr="carpeta/jquery.min.js"></script>
+	<script src="carpeta/jquery.fancybox.js"></script>
+
+3. crear carpeta js/galería/etc para colocar archivos .js  y .css que corresponden a esa galería
+
+4. integrar las miniaturas de la galería en el HTML con:
+
+<a href="image_1.jpg" data-fancybox="gallery" data-caption="Caption #1">
+	<img src="thumbnail_1.jpg" alt="" />
+</a>
+
+<a href="image_2.jpg" data-fancybox="gallery" data-caption="Caption #2">
+	<img src="thumbnail_2.jpg" alt="" />
+</a>
+
+* image_1 es la imagen que se va a abrir
+* thumbnail_1 es la miniatura de la imagen que quiero abrir
+
+4. Opcional, se puede empezar a modificar los elementos en el css personal inspeccionando el archivo fancybox.js
+
+
+------
+
+DOCUMENTACIÓN OFICIAL
+https://obu.edu/_resources/ldp/galleries/fancybox/
+
+--------
+cada galería tiene sus instrucciones
+
+GOOGLEAR
+- js gallery
+- image gallery HTML
+- jQuery gallery
