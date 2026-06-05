@@ -133,8 +133,8 @@ p {
     align-items: center;
     gap: 3rem;
 
-    width: 100%;              /* 👈 ocupa todo el ancho */
-    background-color: #ff4da6;
+    width: 100%;
+    background-color: var(--magallanes);
 
     padding: 1rem 2rem;
 }
@@ -151,7 +151,7 @@ p {
     font-family: inherit;
     font-size: 1rem;
 
-    color: #ffffff; /* inactivo blanco */
+    color: var(--espuma); /* inactivo blanco */
 
     padding: 0.5rem 1rem;
 
@@ -159,7 +159,7 @@ p {
 }
 
 .tab-btn.active {
-    color: #000000; /* activo negro */
+    color: var(--pinguino); /* activo negro */
     font-weight: 700;
 }
 
