@@ -9,7 +9,7 @@
 	--piedrita: rgb(169, 137, 115);
 }
 
-/* configuraciones generales */
+/* Configuraciones Generales */
 
 @font-face {
 	font-family: 'baserio';
@@ -77,7 +77,63 @@ ul {
 	line-height: 1.6;
 }
 
-/* carrousel de videos */
+/*HEADER*/
+
+header {
+	background-color: var(--pinguino);
+	padding: 15px 40px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.boton {
+	color: var(--espuma);
+	border: 2px solid var(--espuma);
+	border-radius: 999px;
+	padding: 10px 20px;
+	width: 160px;
+	text-align: center;
+	transition: 0.3s ease;
+}
+
+.boton:hover {
+	background-color: var(--magallanes);
+	color: var(--pinguino);
+	border-color: var(--magallanes);
+}
+
+#corazon {
+	height: 32px;
+	width: auto;
+}
+
+#home {
+	height: 25px;
+	width: auto;
+}
+
+#corazon,
+#home {
+	fill: var(--magallanes);
+	transition: 0.3s ease;
+}
+
+#corazon:hover,
+#home:hover {
+	fill: var(--espuma)
+}
+
+/*CARROUSEL DE VIDEOS*/
 
 .video-heroe {
 	position: relative;
@@ -127,49 +183,51 @@ ul {
 /* ===== MENÚ DE SOLAPAS ===== */
 
 .tabs-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
 
-    width: 100%;
-    background-color: var(--magallanes);
+	width: 100%;
+	background-color: var(--magallanes);
 
-    padding: 1rem 2rem;
+	padding: 1rem 2rem;
 }
 
 .tab-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 
-    background: none;
-    border: none;
-    cursor: pointer;
+	background: none;
+	border: none;
+	cursor: pointer;
 
-    font-family: inherit;
-    font-size: 1rem;
+	font-family: inherit;
+	font-size: 1rem;
 
-    color: var(--espuma); /* inactivo blanco */
+	color: var(--espuma);
+	/* inactivo blanco */
 
-    padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem;
 
-    transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .tab-btn.active {
-    color: var(--pinguino); /* activo negro */
-    font-weight: 700;
+	color: var(--pinguino);
+	/* activo negro */
+	font-weight: 700;
 }
 
 /* ===== CONTENIDO ===== */
 
 .tab-content {
-    display: none;
+	display: none;
 }
 
 .tab-content.active {
-    display: block;
+	display: block;
 }
 
 .h1 {
@@ -217,62 +275,7 @@ ul {
 	padding: 20px 80px;
 }
 
-footer {
-	background-color: var(--pinguino);
-	padding: 20px 80px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.footer-logo,
-.footer-redes,
-.footer-copy {
-	flex: 1;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.footer-logo img {
-	width: 40px;
-	height: 40px;
-	margin-bottom: 10px;
-}
-
-.footer-redes ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 10px 0;
-
-	display: flex;
-	gap: 16px;
-	align-items: center;
-	justify-content: center;
-}
-
-.footer-redes img {
-	width: 40px;
-	height: 40px;
-	display: block;
-}
-
-.footer-logo p,
-.footer-redes p,
-.footer-copy p {
-	margin: 0;
-	color: var(--espuma);
-	font-size: 0.9rem;
-	font-weight: 400;
-}
-
-.footer-copy {
-	justify-content: center;
-}
-
-/*carrousel index*/
+/*CARROUSEL INDEX*/
 
 .carrousel {
 	width: 100%;
@@ -326,62 +329,6 @@ footer {
 	color: var(--espuma);
 }
 
-/*HEADER*/
-
-header {
-	background-color: var(--pinguino);
-	padding: 15px 80px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.menu {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-}
-
-.boton {
-	color: var(--espuma);
-	border: 2px solid var(--espuma);
-	border-radius: 999px;
-	padding: 10px 20px;
-	width: 160px;
-	text-align: center;
-	transition: 0.3s ease;
-}
-
-.boton:hover {
-	background-color: var(--magallanes);
-	color: var(--pinguino);
-	border-color: var(--magallanes);
-}
-
-#corazon {
-	height: 32px;
-	width: auto;
-}
-
-#home {
-	height: 25px;
-	width: auto;
-}
-
-#corazon,
-#home {
-	fill: var(--magallanes);
-	transition: 0.3s ease;
-}
-
-#corazon:hover,
-#home:hover {
-	fill: var(--espuma)
-}
-
 /*GALERIA*/
 
 .titulos {
@@ -423,6 +370,8 @@ nav {
 #fancybox a {
 	overflow: hidden;
 }
+
+/*CURIOSIDADES */
 
 .pingu-curiosidades {
 	background-color: var(--piedrita);
@@ -590,25 +539,35 @@ aside img {
 
 footer {
 	background-color: var(--pinguino);
-	padding: 20px 80px;
-
+	padding: 20px 40px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
-.footer-logo,
-.footer-redes,
-.footer-copy {
-	flex: 1;
+.footer-seccion {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 12px;
+}
+
+.footer-seccion ul {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	line-height: 0;
+}
+
+.footer-seccion p {
+	color: var(--espuma);
+	font-size: 0.9rem;
+	font-weight: 400;
 }
 
 .boton-footer {
 	height: 48px;
-	width: auto;
+	width: 48px;
 	fill: var(--espuma);
 	transition: 0.3s ease;
 }
@@ -617,47 +576,11 @@ footer {
 	fill: var(--magallanes);
 }
 
-/*ESTO EN GRIS NO SÉ SI APLICA O YA NO
-.footer-logo img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-}*/
 
-.footer-redes ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 0 10px 0;
-
-	display: flex;
-	gap: 16px;
-	align-items: center;
-	justify-content: center;
-}
-
-/*
-.footer-redes img {
-    width: 40px;
-    height: 40px;
-    display: block;
-}*/
-
-.footer-logo p,
-.footer-redes p,
-.footer-copy p {
-	margin: 0;
-	color: var(--espuma);
-	font-size: 0.9rem;
-	font-weight: 400;
-}
-
-.footer-copy {
-	justify-content: center;
-}
 
 /*RESPONSIVE*/
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
 	h1 {
 		font-size: 1.5rem;
