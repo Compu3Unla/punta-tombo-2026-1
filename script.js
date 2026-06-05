@@ -48,3 +48,36 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(cambiarVideo, 8000);
 
 });
+
+/* sistema de solapas */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const botones = document.querySelectorAll(".tab-btn");
+    const contenidos = document.querySelectorAll(".tab-content");
+
+    botones.forEach(boton => {
+
+        boton.addEventListener("click", () => {
+
+            const destino = boton.dataset.tab;
+
+            botones.forEach(btn =>
+                btn.classList.remove("active")
+            );
+
+            contenidos.forEach(contenido =>
+                contenido.classList.remove("active")
+            );
+
+            boton.classList.add("active");
+
+            document
+                .getElementById(destino)
+                .classList.add("active");
+
+        });
+
+    });
+
+});
