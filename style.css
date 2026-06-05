@@ -73,6 +73,13 @@ p {
 	overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+ul {
+	line-height: 1.6;
+}
+
+>>>>>>> origin/contacto-maira
 /* carrousel de videos */
 
 .video-heroe {
@@ -113,11 +120,6 @@ p {
 .h1 {
 	background-color: var(--oceano);
 	text-align: center;
-	padding: 20px 80px;
-}
-
-.h1 {
-	background-color: var(--oceano);
 	padding: 20px 80px;
 }
 
@@ -171,6 +173,11 @@ p {
 
 .tab-content.active {
     display: block;
+}
+
+.h1 {
+	background-color: var(--oceano);
+	padding: 20px 80px;
 }
 
 .clima {
@@ -468,7 +475,12 @@ nav {
 	visibility: visible;
 }
 
-/*CONTACTO*/
+/* CONTACTO */
+
+.h3-mobile {
+	display: none;
+}
+
 .contacto-body {
 	background-color: var(--magallanes);
 }
@@ -565,6 +577,10 @@ input[type="submit"]:hover {
 
 .parrafos-contacto p {
 	font-weight: 600;
+}
+
+.parrafos-contacto div {
+	width: 281px;
 }
 
 aside img {
@@ -736,6 +752,18 @@ footer {
 
 @media (max-width: 768px) {
 
+	.h3-desktop {
+		display: none;
+	}
+
+	.h3-mobile {
+		display: block;
+	}
+
+	label {
+		font-size: 0.9rem;
+	}
+
 	#formulario {
 		flex-direction: column;
 		align-items: center;
@@ -746,6 +774,7 @@ footer {
 		margin-left: 0;
 		width: 90%;
 		gap: 3rem;
+		padding: 40px 25px;
 	}
 
 	form {
@@ -762,6 +791,7 @@ footer {
 	.parrafos-contacto {
 		flex-direction: column;
 		gap: 2rem;
+		font-size: 0.9rem;
 	}
 
 	aside {
@@ -769,8 +799,7 @@ footer {
 	}
 
 	aside img {
-		width: 100%;
-		height: auto;
+		display: none;
 	}
 
 	.titulos-contacto {
