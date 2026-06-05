@@ -123,7 +123,6 @@ p {
 
 .solapas {
 	background-color: var(--espuma);
-	padding: 20px 80px;
 }
 
 /* ===== MENÚ DE SOLAPAS ===== */
@@ -133,12 +132,17 @@ p {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+    width: 100%;              /* 👈 ocupa todo el ancho */
+    background-color: #ff4da6;
+
+    padding: 1rem 2rem;
 }
 
 .tab-btn {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.5rem;
 
     background: none;
     border: none;
@@ -146,23 +150,16 @@ p {
 
     font-family: inherit;
     font-size: 1rem;
-    color: #ffffff;
 
-    padding: 1rem;
-    transition: 0.3s;
-}
+    color: #ffffff; /* inactivo blanco */
 
-.tab-btn img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
+    padding: 0.5rem 1rem;
 
-.tab-btn:hover {
-    opacity: 0.8;
+    transition: color 0.3s ease;
 }
 
 .tab-btn.active {
+    color: #000000; /* activo negro */
     font-weight: 700;
 }
 
