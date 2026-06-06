@@ -454,9 +454,8 @@ nav {
 #form-contacto {
 	display: flex;
 	flex-direction: column;
-	margin-left: 10%;
-	justify-content: center;
-	gap: 110px
+	gap: 110px;
+	margin: 5% 5% 5% 10%;
 }
 
 form {
