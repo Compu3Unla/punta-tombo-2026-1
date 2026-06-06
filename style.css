@@ -170,6 +170,15 @@ nav {
 	display: block;
 }
 
+.logo-hero {
+    position: absolute;
+    top: 60px;   
+    left: 40px;  
+    z-index: 10;
+    max-width: 444px; 
+    height: auto;
+}
+
 .h1 {
 	background-color: var(--oceano);
 	text-align: center;
@@ -745,4 +754,10 @@ footer {
     .video-heroe {
         height: fit-content;
     }
+	.logo-hero {
+        width: 30%; 
+        top: 20px; 
+        left: 20px;
+    }
+
 }
