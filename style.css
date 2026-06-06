@@ -85,9 +85,15 @@ header {
 }
 
 nav {
-	display: flex;
+	display: none;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.nav-desktop {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
@@ -131,6 +137,10 @@ nav {
 #corazon:hover,
 #home:hover {
 	fill: var(--espuma)
+}
+
+.nav-mobile {
+    display: none !important; 
 }
 
 /*CARROUSEL DE VIDEOS*/
@@ -794,6 +804,70 @@ footer {
     	flex-shrink: 0;
     	transition: fill 0.3s ease; 
 }
+/*HEADER MOBILE*/
+@media (max-width: 768px) {
+    .nav-desktop { 
+        display: none !important;
+    }
+    
+    .nav-mobile {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+		position: relative;
+    }
+    
+    .menu-derecha { 
+		display: flex; 
+		align-items: center; 
+		gap: 20px; 
+	}
+    
+    .hamburguesa { 
+		cursor: pointer; 
+	}
+    
+    .hamburguesa span { 
+        display: block; 
+		width: 25px; 
+		height: 3px; 
+        background: var(--espuma); 
+		margin: 5px 0; 
+    }
+    
+    #check-menu { 
+		display: none; 
+	}
 
+	.menu-desplegable {
+    display: none; 
+    position: fixed !important;
+    top: 65px;
+    left: 0; 
+    width: 100%; 
+    height: 39%; 
+    background-color: var(--magallanes); 
+    flex-direction: column; 
+    padding-top: 20px; 
+    align-items: center; 
+    gap: 20px;
+    z-index: 9999 !important; 
 }
+
+	.menu-desplegable .boton {
+    width: 90%;          
+    max-width: 100%;  
+    padding: 15px 20px; 
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+	#check-menu:checked ~ .menu-desplegable,
+	.nav-mobile #check-menu:checked ~ .menu-desplegable {
+    display: flex !important;
+}
+}
+}
+
 
