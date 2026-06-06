@@ -228,18 +228,15 @@ nav {
 	/* activo negro */
 	font-weight: 700;
 }
-
-.tab-btn img {
+.tab-btn svg {
     width: 32px;
     height: 30px;
-    object-fit: contain;
+    fill: currentColor;
     flex-shrink: 0;
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s ease; 
 }
 
-.tab-btn.active img {
-    filter: none; 
+.tab-btn.active svg {
+   fill: currentColor; 
 }
 
 /* ===== CONTENIDO ===== */
@@ -750,6 +747,7 @@ footer {
 	}
 
 }
+/*RESPONSIVE CARRUSELES*/
 @media (max-width: 768px) {
     .video-heroe {
         height: fit-content;
@@ -762,5 +760,40 @@ footer {
  .carrousel {
         height: fit-content;
     }
+	/*RESPONSIVE SOLAPAS INDEX*/
+	.tabs-menu {
+        flex-direction: column; 
+        align-items: stretch;   
+        gap: 0;                 
+        background-color: var(--pinguino); 
+    }
+
+    .tab-btn {
+        justify-content: space-between; 
+        padding: 1.5rem 2rem;
+        border-bottom: 2px solid var(--magallanes); 
+        width: 100%;
+        color: var(--magallanes); 
+    }
+
+    .tab-btn span {
+		order: 1;
+        font-size: 1.2rem;
+    }
+
+	.tab-btn.active {
+        color: var(--espuma);
+        font-weight: 700;
+    }
+
+	.tab-btn svg {
+		order: 2;
+    	width: 32px;
+    	height: 30px;
+    	fill: currentColor !important; 
+    	flex-shrink: 0;
+    	transition: fill 0.3s ease; 
+}
 
 }
+
