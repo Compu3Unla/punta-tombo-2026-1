@@ -75,42 +75,91 @@
          <section class="solapas">
             <!-- Menú de solapas -->
             <div class="tabs-menu">
-               <button class="tab-btn active" data-tab="ubicacion">
-                  <!-- gnr class donde-comer -->
-                  <img src="img/xx.jpg" alt="">
-                  <span>Dónde comer</span>
+               <button class="tab-btn active" data-tab="donde-comer">
+               <img src="img/xx.jpg" alt="">
+               <span>Dónde comer</span>
                </button>
-               <button class="tab-btn" data-tab="lugares">
-                  <!-- gnr class alojamiento -->
-                  <img src="img/xx.jpg" alt="">
-                  <span>Alojamiento</span>
+               <button class="tab-btn" data-tab="alojamiento">
+               <img src="img/xx.jpg" alt="">
+               <span>Alojamiento</span>
                </button>
-               <button class="tab-btn" data-tab="flora">
-                  <!-- gnr class excursiones -->
-                  <img src="img/xx.jpg" alt="">
-                  <span>Excursiones</span>
+               <button class="tab-btn" data-tab="excursiones">
+               <img src="img/xx.jpg" alt="">
+               <span>Excursiones</span>
                </button>
             </div>
-            <!-- Contenido de la primera solapa -->
-            <div class="tab-content active" id="ubicacion">
-               <!--misma class que corresponda, donde-comer-->
-               <!-- Desarrollo -->
+            <!-- Solapa 1 -->
+            <div class="tab-content active" id="donde-comer">
                <p>
                   Acá van los datos de dónde comer
                </p>
             </div>
-            <!-- Contenido de la segunda solapa -->
-            <div class="tab-content" id="lugares">
-               <!--misma class que corresponda, alojamiento-->
-               <!-- Desarrollo -->
-               <p>
-                  Acá va la data de alojamientos
-               </p>
+            <!-- Solapa 2 -->
+            <div class="tab-content" id="alojamiento">
+               <section class="galeria-interna">
+                  <button class="galeria-interna-btn galeria-interna-btn-prev" aria-label="Alojamiento anterior">
+                  <img src="img/varias/logo-chubut-48px.png" alt="Anterior">
+                  </button>
+                  <div class="galeria-interna-slider">
+                     <!-- Slide 1 -->
+                     <article class="galeria-interna-item active">
+                        <img src="img/solapas/alojamiento-dospicos.jpg" alt="Estancia Dos Picos" class="galeria-interna-img">
+                        <div class="galeria-interna-info">
+                           <div class="galeria-interna-titulo">
+                              <h3>Estancia Dos Picos</h3>
+                           </div>
+                           <div class="galeria-interna-ubicacion">
+                              <p>Trelew, Chubut</p>
+                           </div>
+                           <div class="galeria-interna-descripcion">
+                              <p>
+                                 Estancia Dos Picos tiene todo lo que necesitás para pasar una estadía inolvidable.
+                              </p>
+                           </div>
+                        </div>
+                     </article>
+                     <!-- Slide 2 -->
+                     <article class="galeria-interna-item">
+                        <img src="img/solapas/alojamiento-casa.jpg" alt="La Casa de Piedra" class="galeria-interna-img">
+                        <div class="galeria-interna-info">
+                           <div class="galeria-interna-titulo">
+                              <h3>La Casa de Piedra</h3>
+                           </div>
+                           <div class="galeria-interna-ubicacion">
+                              <p>Acceso a Punta Tombo</p>
+                           </div>
+                           <div class="galeria-interna-descripcion">
+                              <p>
+                                 La Casa de Piedra se encuentra en la ruta de acceso a Punta Tombo, diseñada para disfrutar de la experiencia de la pingüinera.
+                              </p>
+                           </div>
+                        </div>
+                     </article>
+                     <!-- Slide 3 -->
+                     <article class="galeria-interna-item">
+                        <img src="img/solapas/alojamiento-lasoñada.jpg" alt="La Soñada" class="galeria-interna-img">
+                        <div class="galeria-interna-info">
+                           <div class="galeria-interna-titulo">
+                              <h3>La Soñada</h3>
+                           </div>
+                           <div class="galeria-interna-ubicacion">
+                              <p>Punta Tombo</p>
+                           </div>
+                           <div class="galeria-interna-descripcion">
+                              <p>
+                                 Un alojamiento pensado para quienes buscan tranquilidad y cercanía con la naturaleza patagónica.
+                              </p>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+                  <button class="galeria-interna-btn galeria-interna-btn-next" aria-label="Siguiente alojamiento">
+                  <img src="img/varias/logo-chubut-48px.png" alt="Siguiente">
+                  </button>
+               </section>
             </div>
-            <!-- Contenido de la tercera solapa -->
-            <div class="tab-content" id="flora">
-               <!--misma class que corresponda, excursiones-->
-               <!-- Desarrollo -->
+            <!-- Solapa 3 -->
+            <div class="tab-content" id="excursiones">
                <p>
                   Acá la data de excursiones
                </p>

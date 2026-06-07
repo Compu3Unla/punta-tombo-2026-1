@@ -81,3 +81,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* galería interna slides */
+
+const galeriaInternaItems = document.querySelectorAll('.galeria-interna-item');
+
+const btnPrev = document.querySelector('.galeria-interna-btn-prev');
+const btnNext = document.querySelector('.galeria-interna-btn-next');
+
+let galeriaInternaActual = 0;
+
+function mostrarSlide(indice) {
+
+   galeriaInternaItems.forEach(item => {
+      item.classList.remove('active');
+   });
+
+   galeriaInternaItems[indice].classList.add('active');
+
+}
+
+btnNext.addEventListener('click', () => {
+
+   galeriaInternaActual++;
+
+   if (galeriaInternaActual >= galeriaInternaItems.length) {
+      galeriaInternaActual = 0;
+   }
+
+   mostrarSlide(galeriaInternaActual);
+
+});
+
+btnPrev.addEventListener('click', () => {
+
+   galeriaInternaActual--;
+
+   if (galeriaInternaActual < 0) {
+      galeriaInternaActual = galeriaInternaItems.length - 1;
+   }
+
+   mostrarSlide(galeriaInternaActual);
+
+});

@@ -305,6 +305,77 @@ nav {
     gap: 25px;
 }
 
+/* galería interna alojamiento: guia del turista */
+
+.galeria-interna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.galeria-interna-slider {
+    flex: 1;
+    max-width: 1100px;
+}
+
+.galeria-interna-item {
+    display: none;
+}
+
+.galeria-interna-item.active {
+    display: block;
+}
+
+.galeria-interna-item img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.galeria-interna-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    align-items: start;
+}
+
+.galeria-interna-titulo {
+    color: #47b4d2;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.galeria-interna-titulo::before {
+    content: "♡ ";
+    color: #47b4d2;
+}
+
+.galeria-interna-ubicacion {
+    margin: 0;
+}
+
+.galeria-interna-descripcion {
+    margin: 0;
+}
+
+.galeria-interna-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.galeria-interna-btn img {
+    width: 80px;
+    display: block;
+}
+
+/* clima */
+
 .clima {
 	background-color: var(--magallanes);
 	padding: 20px 80px;
