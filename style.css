@@ -488,6 +488,14 @@ nav {
 	visibility: visible;
 }
 
+#verano {
+	background-color: var(--oceano);
+}
+
+#primavera {
+	background-color: var(--magallanes);
+}
+
 /* CONTACTO */
 
 .h3-mobile {
