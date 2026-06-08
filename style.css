@@ -295,12 +295,11 @@ nav {
 	max-width: 723px;
 }
 
-.flecha-localizacion,
-.flecha-localizacion img {
+.flecha-localizacion {
 	display: flex;
 	align-items: center;
-	gap: 3px;
-	border: none;
+	gap: 5px;
+	fill: var(--oceano)
 }
 
 .mapa-texto {
@@ -392,39 +391,51 @@ nav {
 
 .tarjeta-florayfauna {
 	border-radius: 25px;
+	display: block;
+	margin: 0 auto;
 }
+
 .lobo:hover {
 	content: url(img/solapas/fauna-lobo.jpg);
 }
+
 .jarilla:hover {
 	content: url(img/solapas/flora-jarilla.jpg);
 }
+
 .mara:hover {
 	content: url(img/solapas/fauna-mara.jpg);
 }
+
 .quilembai:hover {
 	content: url(img/solapas/flora-quilembai.jpg);
 }
+
 .colapiche:hover {
 	content: url(img/solapas/flora-colapiche.jpg);
 }
+
 .pato:hover {
 	content: url(img/solapas/fauna-pato.jpg);
 }
+
 .junco:hover {
 	content: url(img/solapas/flora-junco.jpg);
 }
+
 .zorro:hover {
 	content: url(img/solapas/fauna-zorro.jpg);
 }
+
 .descubri-florayfauna {
 	text-align: center;
-    display: flex;
+	display: flex;
 	flex-direction: column;
-    align-items: center;
+	align-items: center;
 	padding: 50px 0px 70px;
 	gap: 30px;
 }
+
 .linea {
 	width: 80%;
 	height: 2px;
@@ -983,6 +994,28 @@ footer {
 		fill: currentColor !important;
 		flex-shrink: 0;
 		transition: fill 0.3s ease;
+	}
+
+
+	/*SOLAPA DONDE ESTAMOS*/
+	.mapas {
+		row-gap: 30px;
+	}
+
+	.videomap {
+		width: 80%;
+		height: auto;
+	}
+
+	/* SOLAPA FLORA Y FAUNA*/
+	.florayfauna-contenedor {
+		grid-template-columns: repeat(2, auto);
+	}
+
+	.tarjeta-florayfauna {
+		width: 100%;
+		height: auto;
+		border-radius: 20px;
 	}
 
 	/*HEADER MOBILE*/
