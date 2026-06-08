@@ -792,7 +792,23 @@ footer {
 	fill: var(--magallanes);
 }
 
+/* animación pinguinos */
 
+.pingu-svg {
+    display: inline-block;
+    transform-origin: center bottom;
+    animation: mecedora 5s ease-in-out infinite;
+    will-change: transform;
+}
+
+@keyframes mecedora {
+    0%, 100% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+}
 
 /*RESPONSIVE*/
 
@@ -1083,3 +1099,4 @@ footer {
 		}
 	}
 }
+
