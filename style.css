@@ -917,7 +917,19 @@ footer {
     }
 }
 
-/*RESPONSIVE*/
+/*RESPONSIVES*/
+
+/* mediaqueries de laptop 1400px */
+
+@media (max-width: 1400px) {
+
+	.florayfauna-contenedor {
+		grid-template-columns: repeat(3, auto);
+	}
+
+}
+
+/* mediaqueries 768px */
 
 @media (max-width: 768px) {
 
@@ -1145,7 +1157,8 @@ footer {
 	}
 
 	/*HEADER MOBILE*/
-	@media (max-width: 768px) {
+	
+@media (max-width: 768px) {
 		.nav-desktop {
 			display: none !important;
 		}
@@ -1209,4 +1222,76 @@ footer {
 		}
 	}
 }
+
+@media (max-width: 768px) {
+
+	/* TIENDA */
+
+	.tienda {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 20px;
+	}
+
+	.producto {
+		padding: 12px;
+		width: 100%;
+	}
+
+	.producto img {
+		width: 100%;
+		height: auto;
+	}
+
+	.producto h3 {
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+
+	.precio {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	.boton-vermas {
+		width: 100%;
+		padding: 10px;
+	}
+
+	/* POPUP PRODUCTO */
+
+	.detalle-producto {
+		width: 95vw;
+		padding: 15px;
+	}
+
+	.producto-popup {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.producto-info {
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.producto-precio {
+		width: 100%;
+		align-items: center;
+	}
+
+	.boton-comprar {
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.detalle-producto img {
+		margin-bottom: 15px;
+	}
+
+	.precio-grande {
+		font-size: 1.8rem;
+	}
+}
+
 
