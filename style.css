@@ -622,7 +622,15 @@ nav {
 
 /* GUÍA DEL TURISTA */
 
+#disfruta {
+	color: var(--oceano);
+	text-align: center;
+	background-color: var(--espuma);
+	padding: 30px 0;
+}
+
 /* GUÍA DEL TURISTA - SOLAPA EXCURSIONES */
+
 .excursiones-completo {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
