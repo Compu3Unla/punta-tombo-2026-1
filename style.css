@@ -984,6 +984,11 @@ aside img {
 	animation: rebote 0.4s ease;
 }
 
+.detalle-producto,
+.meme-popup {
+	display: none;
+}
+
 @keyframes rebote {
 	0% {
 		transform: scale(0.8);
@@ -1469,8 +1474,12 @@ footer {
 		/* POPUP PRODUCTO */
 
 		.detalle-producto {
-			width: 95vw;
+			width: 70vw;
 			padding: 15px;
+		}
+
+		.detalle-producto h2 {
+			font-size: 1.5rem;
 		}
 
 		.producto-popup {
@@ -1495,16 +1504,39 @@ footer {
 
 		.detalle-producto img {
 			margin-bottom: 15px;
+			width: 70vw;
+			height: auto;
 		}
 
 		.precio-grande {
 			font-size: 1.8rem;
 		}
-	}
 
-	/* RESPONSIVE GUIA DEL TURISTA SOLAPA - EXCURSIONES 768px*/
-	.excursiones-completo {
-		grid-template-columns: repeat(1, auto);
-	}
+		/*POPUP MEME*/
 
+		.meme-popup {
+			width: 70vw;
+			height: auto;
+			padding: 15px;
+			gap: 10px;
+		}
+
+		#meme-texto {
+			color: var(--pinguino);
+			font-size: 1rem;
+			font-weight: 600;
+			padding-top: 10px;
+		}
+
+		#meme img {
+			width: 65vw;
+			height: auto;
+		}
+
+		/* RESPONSIVE GUIA DEL TURISTA SOLAPA - EXCURSIONES 768px*/
+		.excursiones-completo {
+			grid-template-columns: repeat(1, auto);
+		}
+
+	}
 }
