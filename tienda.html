@@ -258,9 +258,7 @@
                <p class="precio-grande">
                   $60.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -276,9 +274,7 @@
                <p class="precio-grande">
                   $35.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -294,9 +290,7 @@
                <p class="precio-grande">
                   $25.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -312,9 +306,7 @@
                <p class="precio-grande">
                   $65.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -330,9 +322,7 @@
                <p class="precio-grande">
                   $10.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -348,9 +338,7 @@
                <p class="precio-grande">
                   $30.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -367,9 +355,7 @@
                <p class="precio-grande">
                   $30.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -386,9 +372,7 @@
                <p class="precio-grande">
                   $35.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -405,9 +389,7 @@
                <p class="precio-grande">
                   $90.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -424,9 +406,7 @@
                <p class="precio-grande">
                   $150.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -443,9 +423,7 @@
                <p class="precio-grande">
                   $150.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
@@ -462,21 +440,15 @@
                <p class="precio-grande">
                   $45.000
                </p>
-               <a href="#meme" data-fancybox class="boton-comprar">
-                  Comprar
-               </a>
+               <a href="#meme" data-fancybox class="boton-comprar" onclick="generarMeme()">Comprar</a>
             </div>
          </article>
       </section>
 
-      <!-- POPUP COMPRA -->
-
-      <div id="meme" class="detalle-producto">
-         <img id="meme-imagen" src="img/tienda/meme1.gif" alt="Meme pingüino">
-         <h3 id="meme-texto">
-            TE LA CREÍSTE WEY
-         </h3>
-      </div>
+      <section id="meme" class="meme-popup">
+         <img id="meme-img" src="" alt="">
+         <p id="meme-texto"></p>
+      </section>
 
       <section class="pingu-curiosidades fondo-magallanes">
          <article class="sabias">
@@ -492,7 +464,9 @@
 
    <footer>
       <div class="footer-seccion">
-         <a class="logo-chubut" href="https://chubutpatagonia.gob.ar/"><img class="logo-chubut-normal" src="img/varias/logo-chubut.png" alt="Visitá Chubut"><img class="logo-chubut-hover" src="img/varias/logo-chubut-hover.png" alt=""></a>
+         <a class="logo-chubut" href="https://chubutpatagonia.gob.ar/"><img class="logo-chubut-normal"
+               src="img/varias/logo-chubut.png" alt="Visitá Chubut"><img class="logo-chubut-hover"
+               src="img/varias/logo-chubut-hover.png" alt=""></a>
          <p>Visitá Chubut</p>
       </div>
       <div class="footer-seccion">
@@ -544,6 +518,50 @@
             'close'
          ]
       })
+   </script>
+   <script>
+
+      const memes = [
+
+         {
+            imagen: "img/tienda/meme1.gif",
+            texto: "ERROR: te la creíste wey"
+         },
+
+         {
+            imagen: "img/tienda/meme2.gif",
+            texto: "ERROR: los pingüinos no aceptan tu tarjeta"
+         },
+
+         {
+            imagen: "img/tienda/meme3.gif",
+            texto: "ERROR: 404 pingüino not found"
+         },
+
+         {
+            imagen: "img/tienda/meme4.gif",
+            texto: "ERROR: un pingüino se robó tu pedido"
+         },
+
+         {
+            imagen: "img/tienda/meme5.gif",
+            texto: "ERROR: un pingüino se fugó con tu plata"
+         }
+
+      ];
+
+      function generarMeme() {
+
+         const random = Math.floor(Math.random() * memes.length);
+
+         document.getElementById("meme-img").src =
+            memes[random].imagen;
+
+         document.getElementById("meme-texto").textContent =
+            memes[random].texto;
+
+      }
+
    </script>
 </body>
 
