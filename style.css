@@ -77,6 +77,18 @@ ul {
 	line-height: 1.6;
 }
 
+.fondo-oceano {
+	background-color: var(--oceano);
+}
+
+.fondo-magallanes {
+	background-color: var(--magallanes);
+}
+
+.fondo-piedrita {
+	background-color: var(--piedrita);
+}
+
 /*HEADER*/
 
 header {
@@ -377,6 +389,56 @@ nav {
 	display: block;
 }
 
+/* PINGUFLECHAS */
+
+#anterior,
+#siguiente {
+	width: 90px;
+	height: auto;
+	fill: var(--piedrita);
+	transition: 0.3s ease;
+}
+
+#anterior:hover,
+#siguiente:hover {
+	fill: var(--magallanes);
+}
+
+#anterior {
+	animation: retroceder 1.5s ease-in-out infinite;
+}
+
+#siguiente {
+	animation: avanzar 1.5s ease-in-out infinite;
+}
+
+@keyframes retroceder {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(-8px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes avanzar {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(8px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
 
 /* SOLAPA FLORA Y FAUNA */
 
@@ -603,7 +665,6 @@ nav {
 /*CURIOSIDADES */
 
 .pingu-curiosidades {
-	background-color: var(--piedrita);
 	display: grid;
 	grid-template-columns: auto auto auto;
 	justify-content: center;
@@ -769,6 +830,111 @@ aside img {
 	max-width: 100%;
 	height: auto;
 	display: block;
+}
+
+/*TIENDA*/
+
+.tienda {
+	display: grid;
+	grid-template-columns: repeat(4, max-content);
+	gap: 30px;
+	justify-items: center;
+	justify-content: center;
+	padding: 50px;
+	background-color: var(--espuma);
+}
+
+.producto {
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	align-items: center;
+	border: 2px solid var(--oceano);
+}
+
+.producto img {
+	border-radius: 20px;
+	display: block;
+}
+
+.producto h3 {
+	margin: 15px 0 10px;
+	color: var(--oceano);
+	font-weight: 700;
+}
+
+.precio {
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.boton-vermas,
+.boton-comprar {
+	border: none;
+	border-radius: 20px;
+	padding: 8px 20px;
+	cursor: pointer;
+	background-color: var(--pinguino);
+	color: var(--espuma);
+	border: 2px solid var(--pinguino);
+	font-weight: 700;
+}
+
+.boton-comprar {
+	font-size: 1.2rem;
+}
+
+.boton-vermas:hover,
+.boton-comprar:hover {
+	background-color: var(--oceano);
+	color: var(--pinguino);
+	border: 2px solid var(--pinguino);
+}
+
+.detalle-producto {
+	display: none;
+	border-radius: 20px;
+	max-width: 650px;
+	padding: 25px;
+}
+
+.detalle-producto h2 {
+	color: var(--oceano);
+	padding-bottom: 10px;
+}
+
+.detalle-producto img {
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 25px;
+}
+
+.detalle-producto p {
+	padding-bottom: 15px;
+}
+
+.precio-grande {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.producto-popup {
+	display: flex;
+}
+
+.producto-info,
+.producto-precio {
+	display: flex;
+	flex-direction: column;
+}
+
+.producto-info {
+	text-align: left;
+	padding-right: 50px;
+}
+
+.producto-precio {
+	text-align: center;
 }
 
 /*FOOTER*/
@@ -1056,28 +1222,35 @@ footer {
 		height: auto;
 		border-radius: 20px;
 	}
-	
+
 	.lobo:active {
 		content: url(img/solapas/fauna-lobo.jpg);
 	}
+
 	.jarilla:active {
 		content: url(img/solapas/flora-jarilla.jpg);
 	}
+
 	.mara:active {
 		content: url(img/solapas/fauna-mara.jpg);
 	}
+
 	.quilembai:active {
 		content: url(img/solapas/flora-quilembai.jpg);
 	}
+
 	.colapiche:active {
 		content: url(img/solapas/flora-colapiche.jpg);
 	}
+
 	.pato:active {
 		content: url(img/solapas/fauna-pato.jpg);
 	}
+
 	.junco:active {
 		content: url(img/solapas/flora-junco.jpg);
 	}
+
 	.zorro:active {
 		content: url(img/solapas/fauna-zorro.jpg);
 	}
@@ -1146,4 +1319,76 @@ footer {
 			display: flex !important;
 		}
 	}
+
+	@media (max-width: 768px) {
+
+	/* TIENDA */
+
+	.tienda {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 20px;
+	}
+
+	.producto {
+		padding: 12px;
+		width: 100%;
+	}
+
+	.producto img {
+		width: 100%;
+		height: auto;
+	}
+
+	.producto h3 {
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+
+	.precio {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	.boton-vermas {
+		width: 100%;
+		padding: 10px;
+	}
+
+	/* POPUP PRODUCTO */
+
+	.detalle-producto {
+		width: 95vw;
+		padding: 15px;
+	}
+
+	.producto-popup {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.producto-info {
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.producto-precio {
+		width: 100%;
+		align-items: center;
+	}
+
+	.boton-comprar {
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.detalle-producto img {
+		margin-bottom: 15px;
+	}
+
+	.precio-grande {
+		font-size: 1.8rem;
+	}
+}
+
 }
