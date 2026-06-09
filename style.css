@@ -77,18 +77,6 @@ ul {
 	line-height: 1.6;
 }
 
-.fondo-oceano {
-	background-color: var(--oceano);
-}
-
-.fondo-magallanes {
-	background-color: var(--magallanes);
-}
-
-.fondo-piedrita {
-	background-color: var(--piedrita);
-}
-
 /*HEADER*/
 
 header {
@@ -407,6 +395,26 @@ nav {
 	margin: 0 auto;
 }
 
+.fyf-p {
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	opacity: 0;
+	z-index: 10;
+	color: var(--espuma);
+	pointer-events: none;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, .8);
+}
+
+.tarjeta-fyf {
+	position: relative;
+	display: block;
+}
+
+.tarjeta-fyf:hover .fyf-p {
+	opacity: 1;
+}
+
 .lobo:hover {
 	content: url(img/solapas/fauna-lobo.jpg);
 }
@@ -556,6 +564,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--piedrita);
 	padding: 75px 0px;
 }
 
@@ -594,6 +603,7 @@ nav {
 /*CURIOSIDADES */
 
 .pingu-curiosidades {
+	background-color: var(--piedrita);
 	display: grid;
 	grid-template-columns: auto auto auto;
 	justify-content: center;
@@ -638,6 +648,14 @@ nav {
 .pingu-curiosidades:hover .globo {
 	opacity: 1;
 	visibility: visible;
+}
+
+#verano {
+	background-color: var(--oceano);
+}
+
+#primavera {
+	background-color: var(--magallanes);
 }
 
 /* CONTACTO */
@@ -753,111 +771,6 @@ aside img {
 	display: block;
 }
 
-/*TIENDA*/
-
-.tienda {
-	display: grid;
-	grid-template-columns: repeat(4, max-content);
-	gap: 30px;
-	justify-items: center;
-	justify-content: center;
-	padding: 50px;
-	background-color: var(--espuma);
-}
-
-.producto {
-	padding: 20px;
-	border-radius: 20px;
-	text-align: center;
-	align-items: center;
-	border: 2px solid var(--oceano);
-}
-
-.producto img {
-	border-radius: 20px;
-	display: block;
-}
-
-.producto h3 {
-	margin: 15px 0 10px;
-	color: var(--oceano);
-	font-weight: 700;
-}
-
-.precio {
-	font-weight: 700;
-	margin-bottom: 15px;
-}
-
-.boton-vermas,
-.boton-comprar {
-	border: none;
-	border-radius: 20px;
-	padding: 8px 20px;
-	cursor: pointer;
-	background-color: var(--pinguino);
-	color: var(--espuma);
-	border: 2px solid var(--pinguino);
-	font-weight: 700;
-}
-
-.boton-comprar {
-	font-size: 1.2rem;
-}
-
-.boton-vermas:hover,
-.boton-comprar:hover {
-	background-color: var(--oceano);
-	color: var(--pinguino);
-	border: 2px solid var(--pinguino);
-}
-
-.detalle-producto {
-	display: none;
-	border-radius: 20px;
-	max-width: 650px;
-	padding: 25px;
-}
-
-.detalle-producto h2 {
-	color: var(--oceano);
-	padding-bottom: 10px;
-}
-
-.detalle-producto img {
-	width: 100%;
-	border-radius: 20px;
-	margin-bottom: 25px;
-}
-
-.detalle-producto p {
-	padding-bottom: 15px;
-}
-
-.precio-grande {
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.producto-popup {
-	display: flex;
-}
-
-.producto-info,
-.producto-precio {
-	display: flex;
-	flex-direction: column;
-}
-
-.producto-info {
-	text-align: left;
-	padding-right: 50px;
-}
-
-.producto-precio {
-	text-align: center;
-}
-
 /*FOOTER*/
 
 footer {
@@ -902,34 +815,25 @@ footer {
 /* animación pinguinos */
 
 .pingu-svg {
-    display: inline-block;
-    transform-origin: center bottom;
-    animation: mecedora 5s ease-in-out infinite;
-    will-change: transform;
+	display: inline-block;
+	transform-origin: center bottom;
+	animation: mecedora 5s ease-in-out infinite;
+	will-change: transform;
 }
 
 @keyframes mecedora {
-    0%, 100% {
-        transform: rotate(3deg);
-    }
-    50% {
-        transform: rotate(-3deg);
-    }
-}
 
-/*RESPONSIVES*/
-
-/* mediaqueries de laptop 1400px */
-
-@media (max-width: 1400px) {
-
-	.florayfauna-contenedor {
-		grid-template-columns: repeat(3, auto);
+	0%,
+	100% {
+		transform: rotate(3deg);
 	}
 
+	50% {
+		transform: rotate(-3deg);
+	}
 }
 
-/* mediaqueries 768px */
+/*RESPONSIVE*/
 
 @media (max-width: 768px) {
 
@@ -1081,7 +985,6 @@ footer {
 }
 
 /*RESPONSIVE CARRUSELES*/
-
 @media (max-width: 768px) {
 	.video-heroe {
 		height: fit-content;
@@ -1134,7 +1037,6 @@ footer {
 
 
 	/*SOLAPA DONDE ESTAMOS*/
-
 	.mapas {
 		row-gap: 30px;
 	}
@@ -1145,7 +1047,6 @@ footer {
 	}
 
 	/* SOLAPA FLORA Y FAUNA*/
-
 	.florayfauna-contenedor {
 		grid-template-columns: repeat(2, auto);
 	}
@@ -1155,10 +1056,34 @@ footer {
 		height: auto;
 		border-radius: 20px;
 	}
+	
+	.lobo:active {
+		content: url(img/solapas/fauna-lobo.jpg);
+	}
+	.jarilla:active {
+		content: url(img/solapas/flora-jarilla.jpg);
+	}
+	.mara:active {
+		content: url(img/solapas/fauna-mara.jpg);
+	}
+	.quilembai:active {
+		content: url(img/solapas/flora-quilembai.jpg);
+	}
+	.colapiche:active {
+		content: url(img/solapas/flora-colapiche.jpg);
+	}
+	.pato:active {
+		content: url(img/solapas/fauna-pato.jpg);
+	}
+	.junco:active {
+		content: url(img/solapas/flora-junco.jpg);
+	}
+	.zorro:active {
+		content: url(img/solapas/fauna-zorro.jpg);
+	}
 
 	/*HEADER MOBILE*/
-	
-@media (max-width: 768px) {
+	@media (max-width: 768px) {
 		.nav-desktop {
 			display: none !important;
 		}
@@ -1222,76 +1147,3 @@ footer {
 		}
 	}
 }
-
-@media (max-width: 768px) {
-
-	/* TIENDA */
-
-	.tienda {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 15px;
-		padding: 20px;
-	}
-
-	.producto {
-		padding: 12px;
-		width: 100%;
-	}
-
-	.producto img {
-		width: 100%;
-		height: auto;
-	}
-
-	.producto h3 {
-		font-size: 1rem;
-		line-height: 1.2;
-	}
-
-	.precio {
-		font-size: 1rem;
-		margin-bottom: 10px;
-	}
-
-	.boton-vermas {
-		width: 100%;
-		padding: 10px;
-	}
-
-	/* POPUP PRODUCTO */
-
-	.detalle-producto {
-		width: 95vw;
-		padding: 15px;
-	}
-
-	.producto-popup {
-		flex-direction: column;
-		gap: 20px;
-	}
-
-	.producto-info {
-		padding-right: 0;
-		text-align: center;
-	}
-
-	.producto-precio {
-		width: 100%;
-		align-items: center;
-	}
-
-	.boton-comprar {
-		width: 100%;
-		max-width: 250px;
-	}
-
-	.detalle-producto img {
-		margin-bottom: 15px;
-	}
-
-	.precio-grande {
-		font-size: 1.8rem;
-	}
-}
-
-
