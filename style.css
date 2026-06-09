@@ -1001,6 +1001,16 @@ footer {
 
 /*RESPONSIVE*/
 
+/* mediaqueries de laptop 1400px */
+
+@media (max-width: 1400px) {
+
+	.florayfauna-contenedor {
+		grid-template-columns: repeat(3, auto);
+	}
+
+}
+
 @media (max-width: 768px) {
 
 	h1 {
