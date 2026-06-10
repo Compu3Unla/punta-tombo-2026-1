@@ -389,6 +389,12 @@ nav {
 	display: block;
 }
 
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* PINGUFLECHAS */
 
 #anterior,
@@ -439,6 +445,8 @@ nav {
 		transform: translateX(0);
 	}
 }
+
+
 
 /* SOLAPA FLORA Y FAUNA */
 
@@ -1548,3 +1556,16 @@ footer {
 
 	}
 }
+
+@media (max-width: 1400px) {
+
+	.galeria-interna {
+		gap: 1rem;
+	}
+
+	#anterior,
+	#siguiente {
+		width: 70px;
+	}
+}
+
