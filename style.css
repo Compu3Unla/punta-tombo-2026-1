@@ -1,6 +1,10 @@
 /* CSS Document */
 @charset "utf-8";
 
+/* ==================================================
+   VARIABLES
+================================================== */
+
 :root {
 	--pinguino: rgb(20, 17, 39);
 	--espuma: rgb(243, 243, 243);
@@ -9,7 +13,9 @@
 	--piedrita: rgb(169, 137, 115);
 }
 
-/* Configuraciones Generales */
+/* ==================================================
+   FUENTES
+================================================== */
 
 @font-face {
 	font-family: 'baserio';
@@ -18,6 +24,10 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+/* ==================================================
+   ESTILOS GENERALES
+================================================== */
 
 * {
 	font-family: "archivo", sans-serif;
@@ -55,7 +65,6 @@ h3 {
 
 h4 {
 	color: var(--pinguino);
-	/* habemus h4? non ricordo chamigas */
 	font-size: 1.2rem;
 	font-weight: 400;
 }
@@ -66,15 +75,14 @@ p {
 	line-height: 1.5rem;
 }
 
-.video-heroe {
-	background-color: var(--espuma);
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-}
-
 ul {
 	line-height: 1.6;
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .fondo-oceano {
@@ -89,7 +97,9 @@ ul {
 	background-color: var(--piedrita);
 }
 
-/*HEADER*/
+/* ==================================================
+   HEADER
+================================================== */
 
 header {
 	position: sticky;
@@ -109,6 +119,10 @@ nav {
 	display: flex !important;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.nav-mobile {
+	display: none !important;
 }
 
 .menu {
@@ -151,18 +165,18 @@ nav {
 
 #corazon:hover,
 #home:hover {
-	fill: var(--espuma)
+	fill: var(--espuma);
 }
 
-.nav-mobile {
-	display: none !important;
-}
-
-/*CARROUSEL DE VIDEOS*/
+/* ==================================================
+   HERO VIDEO
+================================================== */
 
 .video-heroe {
 	position: relative;
+	background-color: var(--espuma);
 	width: 100%;
+	height: 100vh;
 	aspect-ratio: 16 / 9;
 	overflow: hidden;
 }
@@ -204,6 +218,10 @@ nav {
 	height: auto;
 }
 
+/* ==================================================
+   TÍTULOS Y CONTENEDORES GENERALES
+================================================== */
+
 .h1 {
 	background-color: var(--oceano);
 	text-align: center;
@@ -214,7 +232,9 @@ nav {
 	background-color: var(--espuma);
 }
 
-/* ===== MENÚ DE SOLAPAS ===== */
+/* ==================================================
+   MENÚ DE SOLAPAS
+================================================== */
 
 .tabs-menu {
 	display: flex;
@@ -241,7 +261,6 @@ nav {
 	font-size: 1rem;
 
 	color: var(--espuma);
-	/* inactivo blanco */
 
 	padding: 0.5rem 1rem;
 
@@ -250,7 +269,6 @@ nav {
 
 .tab-btn.active {
 	color: var(--pinguino);
-	/* activo negro */
 	font-weight: 700;
 }
 
@@ -265,7 +283,9 @@ nav {
 	fill: currentColor;
 }
 
-/* ===== CONTENIDO ===== */
+/* ==================================================
+   CONTENIDO DE SOLAPAS
+================================================== */
 
 .tab-content {
 	display: none;
@@ -275,19 +295,15 @@ nav {
 	display: block;
 }
 
-
-.h1 {
-	background-color: var(--oceano);
-	padding: 20px 80px;
-}
-
-/* SOLAPA DONDE ESTAMOS */
+/* ==================================================
+   SOLAPA DONDE ESTAMOS
+================================================== */
 
 .mapas {
 	display: flex;
 	justify-content: space-evenly;
-	padding: 68px 0px;
 	flex-wrap: wrap;
+	padding: 68px 0px;
 }
 
 .mapas img,
@@ -307,20 +323,22 @@ nav {
 	max-width: 723px;
 }
 
-.flecha-localizacion {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-	fill: var(--oceano)
-}
-
 .mapa-texto {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
 }
 
-/* galería interna alojamiento: guia del turista */
+.flecha-localizacion {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	fill: var(--oceano);
+}
+
+/* ==================================================
+   GALERÍA INTERNA
+================================================== */
 
 .galeria-interna {
 	display: flex;
@@ -352,9 +370,9 @@ nav {
 .galeria-interna-info {
 	display: grid;
 	grid-template-columns: 1fr 1fr 2fr;
+	align-items: start;
 	gap: 2rem;
 	margin-top: 1.5rem;
-	align-items: start;
 }
 
 .galeria-interna-titulo {
@@ -389,13 +407,9 @@ nav {
 	display: block;
 }
 
-.img-responsive {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* PINGUFLECHAS */
+/* ==================================================
+   FLECHAS GALERÍA
+================================================== */
 
 #anterior,
 #siguiente {
@@ -417,6 +431,10 @@ nav {
 #siguiente {
 	animation: avanzar 1.5s ease-in-out infinite;
 }
+
+/* ==================================================
+   ANIMACIONES FLECHAS
+================================================== */
 
 @keyframes retroceder {
 	0% {
@@ -446,9 +464,9 @@ nav {
 	}
 }
 
-
-
-/* SOLAPA FLORA Y FAUNA */
+/* ==================================================
+   FLORA Y FAUNA
+================================================== */
 
 .florayfauna-contenedor {
 	display: grid;
@@ -460,25 +478,27 @@ nav {
 }
 
 .tarjeta-florayfauna {
-	border-radius: 25px;
 	display: block;
 	margin: 0 auto;
+	border-radius: 25px;
+}
+
+.tarjeta-fyf {
+	position: relative;
+	display: block;
 }
 
 .fyf-p {
 	position: absolute;
 	bottom: 20px;
 	left: 10%;
-	opacity: 0;
 	z-index: 10;
+
 	color: var(--espuma);
+	opacity: 0;
+
 	pointer-events: none;
 	text-shadow: 0 2px 4px rgba(0, 0, 0, .8);
-}
-
-.tarjeta-fyf {
-	position: relative;
-	display: block;
 }
 
 .tarjeta-fyf:hover .fyf-p {
@@ -518,10 +538,11 @@ nav {
 }
 
 .descubri-florayfauna {
-	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+
 	padding: 50px 0px 70px;
 	gap: 30px;
 }
@@ -532,15 +553,18 @@ nav {
 	background-color: var(--pinguino);
 }
 
-/* clima */
+/* ==================================================
+   CLIMA
+================================================== */
 
 .clima {
-	background-color: var(--magallanes);
-	padding: 20px 80px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 4rem;
+
+	background-color: var(--magallanes);
+	padding: 20px 80px;
 }
 
 .clima-info {
@@ -569,24 +593,22 @@ nav {
 	padding: 20px 80px;
 }
 
-.carrousel {
-	background-color: var(--espuma);
-	padding: 20px 80px;
-}
-
-/*CARROUSEL INDEX*/
+/* ==================================================
+   CARROUSEL INDEX
+================================================== */
 
 .carrousel {
 	width: 100%;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
+	background-color: var(--espuma);
 }
 
 .slider-container {
+	position: relative;
 	width: 100%;
 	aspect-ratio: 16 / 9;
-	position: relative;
 	overflow: hidden;
 }
 
@@ -598,9 +620,9 @@ nav {
 }
 
 .slide {
+	position: relative;
 	width: 25%;
 	height: 100%;
-	position: relative;
 }
 
 .slide img {
@@ -615,12 +637,14 @@ nav {
 	top: 50%;
 	right: 5%;
 	transform: translateY(-50%);
-	/* chicas intente hacerlo con flexbox pero sino no se veia el texto */
-	text-align: right;
+
 	width: auto;
 	max-width: 40%;
+
 	margin: 0;
 	padding: 0;
+
+	text-align: right;
 	z-index: 10;
 }
 
@@ -628,7 +652,9 @@ nav {
 	color: var(--espuma);
 }
 
-/* GUÍA DEL TURISTA */
+/* ==================================================
+   GUÍA DEL TURISTA
+================================================== */
 
 #disfruta {
 	color: var(--oceano);
@@ -637,14 +663,17 @@ nav {
 	padding: 30px 0;
 }
 
-/* GUÍA DEL TURISTA - SOLAPA EXCURSIONES */
+/* ==================================================
+   EXCURSIONES
+================================================== */
 
 .excursiones-completo {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
-	padding: 60px 30px;
 	justify-content: center;
-	gap: 40px
+
+	padding: 60px 30px;
+	gap: 40px;
 }
 
 .tarjeta-excursiones {
@@ -654,9 +683,9 @@ nav {
 }
 
 .tarjeta-excursiones img {
-	border-radius: 25px;
 	width: 100%;
 	height: auto;
+	border-radius: 25px;
 }
 
 .tarjeta-excursiones p,
@@ -669,7 +698,9 @@ nav {
 	line-height: 2rem;
 }
 
-/*GALERIA*/
+/* ==================================================
+   GALERÍA
+================================================== */
 
 .titulos {
 	display: flex;
@@ -693,12 +724,14 @@ nav {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
+
 	padding: 75px;
 	background-color: var(--espuma);
 }
 
 #fancybox a {
 	padding: 15px;
+	overflow: hidden;
 }
 
 #fancybox a,
@@ -706,43 +739,49 @@ nav {
 	border-radius: 15px;
 }
 
-#fancybox a {
-	overflow: hidden;
-}
-
-/*CURIOSIDADES */
+/* ==================================================
+   CURIOSIDADES
+================================================== */
 
 .pingu-curiosidades {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	justify-content: center;
 	align-items: center;
+
 	gap: 50px;
 	padding: 30px 0;
 }
 
 .pingu-svg {
-	height: 150px;
 	width: auto;
+	height: 150px;
 }
 
 .globo {
+	position: relative;
+
+	max-width: 350px;
+
+	padding: 15px;
+
 	border: 2px solid var(--pinguino);
 	border-radius: 20px;
-	padding: 15px;
-	max-width: 350px;
+
 	text-align: center;
-	position: relative;
 }
 
 .globo::before {
 	content: "";
-	width: 20px;
-	height: 2px;
-	background-color: var(--pinguino);
+
 	position: absolute;
 	left: -20px;
 	top: 50%;
+
+	width: 20px;
+	height: 2px;
+
+	background-color: var(--pinguino);
 }
 
 .sabias {
@@ -762,7 +801,9 @@ nav {
 	visibility: visible;
 }
 
-/* CONTACTO */
+/* ==================================================
+   CONTACTO
+================================================== */
 
 .h3-mobile {
 	display: none;
@@ -776,12 +817,13 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	background-color: var(--oceano);
 	padding: 75px 0px;
 }
 
 .titulos-contacto h3 {
-	color: var(--espuma)
+	color: var(--espuma);
 }
 
 #formulario {
@@ -792,6 +834,7 @@ nav {
 #form-contacto {
 	display: flex;
 	flex-direction: column;
+
 	gap: 110px;
 	margin: 5% 5% 5% 10%;
 }
@@ -799,8 +842,9 @@ nav {
 form {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
 	align-items: flex-end;
+
+	gap: 30px;
 }
 
 .seccion-form {
@@ -815,29 +859,38 @@ label {
 }
 
 input {
-	border-radius: 10px;
-	background: var(--espuma);
 	width: 737px;
 	height: 72px;
+
 	padding: 20px;
+
 	border: none;
+	border-radius: 10px;
+
+	background: var(--espuma);
 }
 
 textarea {
 	width: 737px;
 	height: 280px;
-	border-radius: 10px;
-	background: var(--espuma);
+
 	padding: 20px;
+
 	border: none;
+	border-radius: 10px;
+
+	background: var(--espuma);
 }
 
 input[type="submit"] {
 	width: 150px;
 	height: 38px;
+
+	padding: 0;
+
 	color: var(--espuma);
 	background-color: var(--pinguino);
-	padding: 0px;
+
 	border-radius: 30px;
 }
 
@@ -848,12 +901,14 @@ input[type="submit"]:hover {
 }
 
 #contactos-utiles {
-	border: solid 2px var(--pinguino);
-	border-radius: 15px;
-	padding: 30px;
 	display: flex;
 	flex-direction: column;
+
 	gap: 15px;
+	padding: 30px;
+
+	border: solid 2px var(--pinguino);
+	border-radius: 15px;
 }
 
 .parrafos-contacto {
@@ -870,38 +925,45 @@ input[type="submit"]:hover {
 }
 
 aside img {
+	display: block;
 	max-width: 100%;
 	height: auto;
-	display: block;
 }
 
-/*TIENDA*/
+/* ==================================================
+   TIENDA
+================================================== */
 
 .tienda {
 	display: grid;
 	grid-template-columns: repeat(4, max-content);
-	gap: 30px;
-	justify-items: center;
 	justify-content: center;
+	justify-items: center;
+
+	gap: 30px;
 	padding: 50px;
+
 	background-color: var(--espuma);
 }
 
 .producto {
 	padding: 20px;
+
+	border: 2px solid var(--oceano);
 	border-radius: 20px;
+
 	text-align: center;
 	align-items: center;
-	border: 2px solid var(--oceano);
 }
 
 .producto img {
-	border-radius: 20px;
 	display: block;
+	border-radius: 20px;
 }
 
 .producto h3 {
 	margin: 15px 0 10px;
+
 	color: var(--oceano);
 	font-weight: 700;
 }
@@ -913,13 +975,16 @@ aside img {
 
 .boton-vermas,
 .boton-comprar {
-	border: none;
-	border-radius: 20px;
-	padding: 8px 20px;
 	cursor: pointer;
-	background-color: var(--pinguino);
+
+	padding: 8px 20px;
+
 	color: var(--espuma);
+	background-color: var(--pinguino);
+
 	border: 2px solid var(--pinguino);
+	border-radius: 20px;
+
 	font-weight: 700;
 }
 
@@ -934,11 +999,17 @@ aside img {
 	border: 2px solid var(--pinguino);
 }
 
+/* ==================================================
+   POPUP PRODUCTO
+================================================== */
+
 .detalle-producto {
 	display: none;
-	border-radius: 20px;
+
 	max-width: 650px;
 	padding: 25px;
+
+	border-radius: 20px;
 }
 
 .detalle-producto h2 {
@@ -948,8 +1019,8 @@ aside img {
 
 .detalle-producto img {
 	width: 100%;
-	border-radius: 20px;
 	margin-bottom: 25px;
+	border-radius: 20px;
 }
 
 .detalle-producto p {
@@ -980,19 +1051,26 @@ aside img {
 	text-align: center;
 }
 
+/* ==================================================
+   POPUP MEME
+================================================== */
+
 .meme-popup {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
-	padding: 30px;
+
 	gap: 20px;
+	padding: 30px;
+
+	text-align: center;
 }
 
 #meme-texto {
 	color: var(--pinguino);
 	font-size: 1.5rem;
 	font-weight: 700;
+
 	padding-top: 30px;
 }
 
@@ -1004,6 +1082,10 @@ aside img {
 .meme-popup {
 	display: none;
 }
+
+/* ==================================================
+   ANIMACIÓN POPUP
+================================================== */
 
 @keyframes rebote {
 	0% {
@@ -1019,26 +1101,32 @@ aside img {
 	}
 }
 
-/*FOOTER*/
+/* ==================================================
+   FOOTER
+================================================== */
 
 footer {
-	background-color: var(--pinguino);
-	padding: 20px 40px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: start;
+
+	padding: 20px 40px;
+
+	background-color: var(--pinguino);
 }
 
 .footer-seccion {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	gap: 12px;
 }
 
 .footer-seccion ul {
 	display: flex;
 	justify-content: center;
+
 	gap: 20px;
 	line-height: 0;
 }
@@ -1064,6 +1152,7 @@ footer {
 .logo-chubut {
 	position: relative;
 	display: block;
+
 	width: 42px;
 	height: 42px;
 }
@@ -1071,6 +1160,7 @@ footer {
 .logo-chubut img {
 	position: absolute;
 	inset: 0;
+
 	width: 100%;
 	height: 100%;
 }
@@ -1085,8 +1175,9 @@ footer {
 }
 
 .boton-footer {
-	height: 42px;
 	width: 42px;
+	height: 42px;
+
 	fill: var(--espuma);
 	transition: 0.3s ease;
 }
@@ -1095,13 +1186,17 @@ footer {
 	fill: var(--magallanes);
 }
 
-/* animación pinguinos */
+/* ==================================================
+   ANIMACIÓN PINGÜINOS
+================================================== */
 
 .pingu-svg {
 	display: inline-block;
+
 	transform-origin: center bottom;
-	animation: mecedora 5s ease-in-out infinite;
 	will-change: transform;
+
+	animation: mecedora 5s ease-in-out infinite;
 }
 
 @keyframes mecedora {
@@ -1116,24 +1211,43 @@ footer {
 	}
 }
 
-/*RESPONSIVE*/
-
-/* mediaqueries de laptop 1400px */
+/* ==================================================
+   RESPONSIVE 1400px
+================================================== */
 
 @media (max-width: 1400px) {
+
+	/* FLORA Y FAUNA */
 
 	.florayfauna-contenedor {
 		grid-template-columns: repeat(3, auto);
 	}
 
-	/* RESPONSIVE GUIA DEL TURISTA SOLAPA - EXCURSIONES 1400px*/
+	/* GALERÍA INTERNA */
+
+	.galeria-interna {
+		gap: 1rem;
+	}
+
+	#anterior,
+	#siguiente {
+		width: 70px;
+	}
+
+	/* EXCURSIONES */
+
 	.excursiones-completo {
 		grid-template-columns: repeat(2, auto);
 	}
 }
 
+/* ==================================================
+   RESPONSIVE 768px
+================================================== */
 
 @media (max-width: 768px) {
+
+	/* TIPOGRAFÍA */
 
 	h1 {
 		font-size: 1.5rem;
@@ -1143,67 +1257,157 @@ footer {
 		font-size: 1rem;
 	}
 
-	/*GALERIA*/
+	/* HEADER */
 
-	.titulos {
-		padding: 20px 0px;
+	.nav-desktop {
+		display: none !important;
 	}
 
-	#fancybox a {
-		width: 50%;
-		padding: 10px;
-		box-sizing: border-box;
+	.nav-mobile {
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+		position: relative;
 	}
 
-	#fancybox img {
-		width: 100%;
-		height: auto;
-	}
-
-	#fancybox a {
-		width: 50%;
-		padding: 10px;
-		box-sizing: border-box;
-	}
-
-	#fancybox img {
-		width: 100%;
-		height: auto;
-	}
-
-	/*CURIOSIDADES*/
-
-	.pingu-curiosidades {
+	.menu-derecha {
 		display: flex;
-		gap: 25px;
-		padding: 15px 25px;
+		align-items: center;
+		gap: 20px;
 	}
 
-	.pingu-svg {
-		height: 120px;
+	.hamburguesa {
+		cursor: pointer;
 	}
 
-	.globo {
-		max-width: 100%;
-		padding: 10px;
-		font-size: 0.9rem;
-		opacity: 1;
-		margin-left: 0px;
-		visibility: visible;
-	}
-
-	.globo::before {
+	.hamburguesa span {
+		display: block;
 		width: 25px;
-		left: -25px;
+		height: 3px;
+		background: var(--espuma);
+		margin: 5px 0;
 	}
 
-	.sabias {
+	#check-menu {
 		display: none;
 	}
 
-}
+	.menu-desplegable {
+		display: none;
+		position: fixed !important;
+		top: 65px;
+		left: 0;
+		width: 100%;
+		height: 39%;
+		background-color: var(--magallanes);
+		flex-direction: column;
+		padding-top: 20px;
+		align-items: center;
+		gap: 20px;
+		z-index: 9999 !important;
+	}
 
-@media (max-width: 768px) {
+	.menu-desplegable .boton {
+		width: 90%;
+		max-width: 100%;
+		padding: 15px 20px;
+		font-size: 1.1rem;
+		margin: 0 auto;
+	}
+
+	#check-menu:checked~.menu-desplegable,
+	.nav-mobile #check-menu:checked~.menu-desplegable {
+		display: flex !important;
+	}
+
+	/* HERO */
+
+	.video-heroe {
+		height: fit-content;
+	}
+
+	.logo-hero {
+		width: 30%;
+		top: 20px;
+		left: 20px;
+	}
+
+	/* CARRUSEL */
+
+	.carrousel {
+		height: fit-content;
+	}
+
+	/* SOLAPAS */
+
+	.tabs-menu {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		background-color: var(--pinguino);
+	}
+
+	.tab-btn {
+		width: 100%;
+		justify-content: space-between;
+		padding: 1.5rem 2rem;
+		border-bottom: 2px solid var(--magallanes);
+		color: var(--magallanes);
+	}
+
+	.tab-btn span {
+		order: 1;
+		font-size: 1.2rem;
+	}
+
+	.tab-btn.active {
+		color: var(--espuma);
+		font-weight: 700;
+	}
+
+	.tab-btn svg {
+		order: 2;
+		width: 32px;
+		height: 30px;
+		fill: currentColor !important;
+		flex-shrink: 0;
+		transition: fill 0.3s ease;
+	}
+
+	/* DONDE ESTAMOS */
+
+	.mapas {
+		row-gap: 30px;
+	}
+
+	.videomap {
+		width: 80%;
+		height: auto;
+	}
+
+	/* FLORA Y FAUNA */
+
+	.florayfauna-contenedor {
+		grid-template-columns: repeat(2, auto);
+	}
+
+	.tarjeta-florayfauna {
+		width: 100%;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	.lobo:active { content: url(img/solapas/fauna-lobo.jpg); }
+	.jarilla:active { content: url(img/solapas/flora-jarilla.jpg); }
+	.mara:active { content: url(img/solapas/fauna-mara.jpg); }
+	.quilembai:active { content: url(img/solapas/flora-quilembai.jpg); }
+	.colapiche:active { content: url(img/solapas/flora-colapiche.jpg); }
+	.pato:active { content: url(img/solapas/fauna-pato.jpg); }
+	.junco:active { content: url(img/solapas/flora-junco.jpg); }
+	.zorro:active { content: url(img/solapas/fauna-zorro.jpg); }
+
+	/* CLIMA */
 
 	.clima {
 		flex-direction: column;
@@ -1221,9 +1425,54 @@ footer {
 		max-width: 500px;
 	}
 
-}
+	/* GALERÍA */
 
-@media (max-width: 768px) {
+	.titulos {
+		padding: 20px 0;
+	}
+
+	#fancybox a {
+		width: 50%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	#fancybox img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* CURIOSIDADES */
+
+	.pingu-curiosidades {
+		display: flex;
+		gap: 25px;
+		padding: 15px 25px;
+	}
+
+	.pingu-svg {
+		height: 120px;
+	}
+
+	.globo {
+		max-width: 100%;
+		padding: 10px;
+		font-size: 0.9rem;
+		opacity: 1;
+		visibility: visible;
+		margin-left: 0;
+	}
+
+	.globo::before {
+		width: 25px;
+		left: -25px;
+	}
+
+	.sabias {
+		display: none;
+	}
+
+	/* CONTACTO */
 
 	.h3-desktop {
 		display: none;
@@ -1244,15 +1493,15 @@ footer {
 	}
 
 	#form-contacto {
-		margin-left: 0;
 		width: 90%;
+		margin-left: 0;
 		gap: 3rem;
 		padding: 40px 25px;
 	}
 
 	form {
-		align-items: stretch;
 		width: 100%;
+		align-items: stretch;
 	}
 
 	input,
@@ -1280,292 +1529,103 @@ footer {
 		text-align: center;
 	}
 
-}
+	/* TIENDA */
 
-/*RESPONSIVE CARRUSELES*/
-@media (max-width: 768px) {
-	.video-heroe {
-		height: fit-content;
+	.tienda {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 20px;
 	}
 
-	.logo-hero {
-		width: 30%;
-		top: 20px;
-		left: 20px;
+	.producto {
+		width: 100%;
+		padding: 12px;
 	}
 
-	.carrousel {
-		height: fit-content;
+	.producto img {
+		width: 100%;
+		height: auto;
 	}
 
-	/*RESPONSIVE SOLAPAS INDEX*/
-	.tabs-menu {
+	.producto h3 {
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+
+	.precio {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	.boton-vermas {
+		width: 100%;
+		padding: 10px;
+	}
+
+	/* POPUP PRODUCTO */
+
+	.detalle-producto {
+		width: 70vw;
+		padding: 15px;
+	}
+
+	.detalle-producto h2 {
+		font-size: 1.5rem;
+	}
+
+	.detalle-producto img {
+		width: 70vw;
+		height: auto;
+		margin-bottom: 15px;
+	}
+
+	.producto-popup {
 		flex-direction: column;
-		align-items: stretch;
-		gap: 0;
-		background-color: var(--pinguino);
+		gap: 20px;
 	}
 
-	.tab-btn {
-		justify-content: space-between;
-		padding: 1.5rem 2rem;
-		border-bottom: 2px solid var(--magallanes);
+	.producto-info {
+		padding-right: 0;
+		text-align: center;
+	}
+
+	.producto-precio {
 		width: 100%;
-		color: var(--magallanes);
+		align-items: center;
 	}
 
-	.tab-btn span {
-		order: 1;
-		font-size: 1.2rem;
+	.boton-comprar {
+		width: 100%;
+		max-width: 250px;
 	}
 
-	.tab-btn.active {
-		color: var(--espuma);
-		font-weight: 700;
+	.precio-grande {
+		font-size: 1.8rem;
 	}
 
-	.tab-btn svg {
-		order: 2;
-		width: 32px;
-		height: 30px;
-		fill: currentColor !important;
-		flex-shrink: 0;
-		transition: fill 0.3s ease;
+	/* POPUP MEME */
+
+	.meme-popup {
+		width: 70vw;
+		height: auto;
+		padding: 15px;
+		gap: 10px;
 	}
 
-
-	/*SOLAPA DONDE ESTAMOS*/
-	.mapas {
-		row-gap: 30px;
+	#meme-texto {
+		font-size: 1rem;
+		font-weight: 600;
+		padding-top: 10px;
 	}
 
-	.videomap {
-		width: 80%;
+	#meme img {
+		width: 65vw;
 		height: auto;
 	}
 
-	/* SOLAPA FLORA Y FAUNA*/
-	.florayfauna-contenedor {
-		grid-template-columns: repeat(2, auto);
-	}
+	/* EXCURSIONES */
 
-	.tarjeta-florayfauna {
-		width: 100%;
-		height: auto;
-		border-radius: 20px;
-	}
-
-	.lobo:active {
-		content: url(img/solapas/fauna-lobo.jpg);
-	}
-
-	.jarilla:active {
-		content: url(img/solapas/flora-jarilla.jpg);
-	}
-
-	.mara:active {
-		content: url(img/solapas/fauna-mara.jpg);
-	}
-
-	.quilembai:active {
-		content: url(img/solapas/flora-quilembai.jpg);
-	}
-
-	.colapiche:active {
-		content: url(img/solapas/flora-colapiche.jpg);
-	}
-
-	.pato:active {
-		content: url(img/solapas/fauna-pato.jpg);
-	}
-
-	.junco:active {
-		content: url(img/solapas/flora-junco.jpg);
-	}
-
-	.zorro:active {
-		content: url(img/solapas/fauna-zorro.jpg);
-	}
-
-	/*HEADER MOBILE*/
-	@media (max-width: 768px) {
-		.nav-desktop {
-			display: none !important;
-		}
-
-		.nav-mobile {
-			display: flex !important;
-			justify-content: space-between;
-			align-items: center;
-			padding: 0px;
-			position: relative;
-		}
-
-		.menu-derecha {
-			display: flex;
-			align-items: center;
-			gap: 20px;
-		}
-
-		.hamburguesa {
-			cursor: pointer;
-		}
-
-		.hamburguesa span {
-			display: block;
-			width: 25px;
-			height: 3px;
-			background: var(--espuma);
-			margin: 5px 0;
-		}
-
-		#check-menu {
-			display: none;
-		}
-
-		.menu-desplegable {
-			display: none;
-			position: fixed !important;
-			top: 65px;
-			left: 0;
-			width: 100%;
-			height: 39%;
-			background-color: var(--magallanes);
-			flex-direction: column;
-			padding-top: 20px;
-			align-items: center;
-			gap: 20px;
-			z-index: 9999 !important;
-		}
-
-		.menu-desplegable .boton {
-			width: 90%;
-			max-width: 100%;
-			padding: 15px 20px;
-			font-size: 1.1rem;
-			margin: 0 auto;
-		}
-
-		#check-menu:checked~.menu-desplegable,
-		.nav-mobile #check-menu:checked~.menu-desplegable {
-			display: flex !important;
-		}
-	}
-
-	@media (max-width: 768px) {
-
-		/* TIENDA */
-
-		.tienda {
-			grid-template-columns: repeat(2, 1fr);
-			gap: 15px;
-			padding: 20px;
-		}
-
-		.producto {
-			padding: 12px;
-			width: 100%;
-		}
-
-		.producto img {
-			width: 100%;
-			height: auto;
-		}
-
-		.producto h3 {
-			font-size: 1rem;
-			line-height: 1.2;
-		}
-
-		.precio {
-			font-size: 1rem;
-			margin-bottom: 10px;
-		}
-
-		.boton-vermas {
-			width: 100%;
-			padding: 10px;
-		}
-
-		/* POPUP PRODUCTO */
-
-		.detalle-producto {
-			width: 70vw;
-			padding: 15px;
-		}
-
-		.detalle-producto h2 {
-			font-size: 1.5rem;
-		}
-
-		.producto-popup {
-			flex-direction: column;
-			gap: 20px;
-		}
-
-		.producto-info {
-			padding-right: 0;
-			text-align: center;
-		}
-
-		.producto-precio {
-			width: 100%;
-			align-items: center;
-		}
-
-		.boton-comprar {
-			width: 100%;
-			max-width: 250px;
-		}
-
-		.detalle-producto img {
-			margin-bottom: 15px;
-			width: 70vw;
-			height: auto;
-		}
-
-		.precio-grande {
-			font-size: 1.8rem;
-		}
-
-		/*POPUP MEME*/
-
-		.meme-popup {
-			width: 70vw;
-			height: auto;
-			padding: 15px;
-			gap: 10px;
-		}
-
-		#meme-texto {
-			color: var(--pinguino);
-			font-size: 1rem;
-			font-weight: 600;
-			padding-top: 10px;
-		}
-
-		#meme img {
-			width: 65vw;
-			height: auto;
-		}
-
-		/* RESPONSIVE GUIA DEL TURISTA SOLAPA - EXCURSIONES 768px*/
-		.excursiones-completo {
-			grid-template-columns: repeat(1, auto);
-		}
-
+	.excursiones-completo {
+		grid-template-columns: repeat(1, auto);
 	}
 }
-
-@media (max-width: 1400px) {
-
-	.galeria-interna {
-		gap: 1rem;
-	}
-
-	#anterior,
-	#siguiente {
-		width: 70px;
-	}
-}
-
