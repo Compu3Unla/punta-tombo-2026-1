@@ -342,6 +342,7 @@ nav {
 
 .galeria-interna {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 3rem;
@@ -1557,6 +1558,58 @@ footer {
 		width: 100%;
 		max-width: 100%;
 	}
+	/*galeria solapas*/
+    
+	.galeria-interna {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding: 15px; 
+    padding-bottom: 60px;  
+	gap: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+	}
+
+	.galeria-interna img {
+    max-width: 100%;   
+    height: auto; 
+    display: block;
+	}
+
+	.galeria-interna-item.active {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin: 10px 0 !important;
+}
+
+	.galeria-interna-info {
+    display: flex !important;
+    flex-direction: column !important; 
+    width: 100% !important;  
+    padding: 20px;
+    margin-top: 20px;
+	}
+
+	.galeria-interna-btn {
+    position: absolute;
+    bottom: 40px; 
+    top: auto; 
+    transform: none; 
+    z-index: 10;
+	margin: 0 !important;
+    padding: 0;
+	}
+
+    .galeria-interna-btn-prev {
+        left: 60px;
+    }
+
+    .galeria-interna-btn-next {
+        right: 60px;
+    }
 
 	/* FLORA Y FAUNA */
 
