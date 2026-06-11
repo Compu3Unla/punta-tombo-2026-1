@@ -359,6 +359,7 @@ nav {
 
 .galeria-interna-item.active {
 	display: block;
+	margin: 55px 0px 60px;
 }
 
 .galeria-interna-item img {
@@ -370,10 +371,11 @@ nav {
 .galeria-interna-info {
 	display: grid;
 	grid-template-columns: 1fr 1fr 2fr;
-	align-items: start;
 	gap: 2rem;
 	margin-top: 1.5rem;
+	align-items: start;
 }
+
 
 .galeria-interna-titulo {
 	color: #47b4d2;
@@ -542,7 +544,6 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-
 	padding: 50px 0px 70px;
 	gap: 30px;
 }
@@ -671,8 +672,9 @@ nav {
 	background-color: var(--espuma);
 }
 
-#mapa-turista h3 {
+#mapa-turista h2 {
 	margin-bottom: 25px;
+	color: var(--pinguino);
 }
 
 #mapa-turista .mapas {
@@ -758,7 +760,7 @@ nav {
 .contenido-donde-comer {
 	display: flex;
 	gap: 24px;
-	padding: 25px 0;
+	padding: 60px 0;
 	flex-direction: column;
 	align-items: center;
 }
