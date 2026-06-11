@@ -392,12 +392,10 @@ nav {
 
 .galeria-interna-titulo h3 {
 	color: var(--oceano)!important;
-	font-size: 1rem; 
-    font-weight: 700;
 }
 
 .galeria-interna-titulo::before {
-	content: "♡ ";
+	content: "♡";
 	font-size: 1.5rem;
 	line-height: 1;
 	color: var(--oceano);
@@ -767,11 +765,11 @@ nav {
 }
 
 .tarjeta-excursiones p,
-.tarjeta-excursiones h4 {
+.tarjeta-excursiones h3 {
 	max-width: 399px;
 }
 
-.tarjeta-excursiones h4 {
+.tarjeta-excursiones h3 {
 	color: var(--oceano);
 	line-height: 2rem;
 }
