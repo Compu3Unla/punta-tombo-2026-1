@@ -359,6 +359,7 @@ nav {
 
 .galeria-interna-item.active {
 	display: block;
+	margin: 55px 0px 60px;
 }
 
 .galeria-interna-item img {
@@ -377,6 +378,7 @@ nav {
     padding-bottom: 30px;
 	margin-bottom: 50px;
 }
+
 
 .galeria-interna-titulo {
 	flex: 0 0 auto;  
@@ -556,7 +558,6 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-
 	padding: 50px 0px 70px;
 	gap: 30px;
 }
@@ -693,8 +694,9 @@ nav {
 	background-color: var(--espuma);
 }
 
-#mapa-turista h3 {
+#mapa-turista h2 {
 	margin-bottom: 25px;
+	color: var(--pinguino);
 }
 
 #mapa-turista .mapas {
@@ -763,6 +765,60 @@ nav {
 .tarjeta-excursiones h4 {
 	color: var(--oceano);
 	line-height: 2rem;
+}
+
+
+/* ==================================================
+   DONDE COMER
+================================================== */
+
+.patita {
+	fill: var(--oceano);
+	width: 17px;
+	height: 19px;
+	flex-shrink: 0;
+}
+
+.contenido-donde-comer {
+	display: flex;
+	gap: 24px;
+	padding: 60px 0;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lugares-comer h3 {
+	color: var(--oceano);
+}
+
+.lugares-comer {
+	display: flex;
+	gap: 24px;
+	padding: 25px 0;
+	border-bottom: 1px solid var(--oceano);
+	max-width: 1250px;
+	justify-content: space-between;
+}
+
+.patita-lugar {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	width: 13%;
+}
+
+.direccion {
+	width: 8%;
+}
+
+.descripcion {
+	width: 35%;
+}
+
+.extra {
+	width: 10%;
+	font-weight: 600;
+	color: var(--piedrita);
 }
 
 /* ==================================================
@@ -1545,6 +1601,31 @@ footer {
 	.zorro:active {
 		content: url(img/solapas/fauna-zorro.jpg);
 	}
+
+	/* DONDE COMER */
+
+	.contenido-donde-comer {
+		padding: 20px 65px;
+	}
+
+	.lugares-comer {
+		flex-direction: column;
+	}
+
+	.patita-lugar,
+	.direccion,
+	.direccion,
+	.descripcion,
+	.extra {
+		width: 100%;
+	}
+
+	.patita-lugar,
+	.direccion,
+	.extra {
+		font-weight: 600;
+	}
+
 
 	/* CLIMA */
 
