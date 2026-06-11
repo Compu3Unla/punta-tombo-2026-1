@@ -369,32 +369,46 @@ nav {
 }
 
 .galeria-interna-info {
-	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
-	gap: 2rem;
-	margin-top: 1.5rem;
-	align-items: start;
+    display: flex;
+    align-items: flex-start; 
+    gap: 3rem;
+    margin-top: 1.5rem;
+    padding: 20px;
+	border-bottom: 2px solid var(--oceano);
+    padding-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 
 .galeria-interna-titulo {
-	color: #47b4d2;
-	font-size: 1.8rem;
-	font-weight: 700;
-	margin: 0;
+	flex: 0 0 auto;  
+    display: flex;  
+    align-items: center; 
+    gap: 8px;       
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.galeria-interna-titulo h3 {
+	color: var(--oceano)!important;
+	font-size: 1rem; 
+    font-weight: 700;
 }
 
 .galeria-interna-titulo::before {
 	content: "♡ ";
-	color: #47b4d2;
-}
-
-.galeria-interna-ubicacion {
-	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1;
+	color: var(--oceano);
 }
 
 .galeria-interna-descripcion {
+	flex: 1;
 	margin: 0;
+}
+
+.galeria-interna-descripcion p {
+	font-size: 0.9rem; 
 }
 
 .galeria-interna-btn {
@@ -648,8 +662,16 @@ nav {
 	z-index: 10;
 }
 
+.texto-banner h2 {
+	font-size: 3rem;
+}
 .texto-banner p {
+	font-size: 1.25rem;
 	color: var(--espuma);
+}
+
+.carrousel-mobile {
+    display: none;
 }
 
 /* ==================================================
@@ -1433,8 +1455,39 @@ footer {
 
 	/* CARRUSEL */
 
-	.carrousel {
-		height: fit-content;
+	.carrousel { 
+    display: none;
+    }
+     
+	.carrousel-mobile {
+    display: block;
+    width: 100%;
+	}
+
+	.carrousel-mobile .slider-container {
+    width: 100%;
+    aspect-ratio: 360 / 94; 
+    overflow: hidden; 
+	}
+
+	.carrousel-mobile .slider-mobile {
+    display: flex;       
+    width: 300%;         
+    height: 100%;  
+	}
+
+	.carrousel-mobile .slide {
+    width: 100%;
+    height: 100%;
+	}
+
+	.texto-banner h2 {
+	font-size: 1.8rem;
+	}
+
+	.texto-banner p {
+	font-size: 1rem;
+	color: var(--espuma);
 	}
 
 	/* SOLAPAS */
