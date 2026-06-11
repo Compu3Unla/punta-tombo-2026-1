@@ -1003,6 +1003,10 @@ textarea {
 	resize: none;
 }
 
+textarea {
+	min-height: 250px;
+}
+
 .seccion-form {
 	width: 100%;
 	max-width: 737px;
