@@ -647,8 +647,16 @@ nav {
 	z-index: 10;
 }
 
+.texto-banner h2 {
+	font-size: 3rem;
+}
 .texto-banner p {
+	font-size: 1.25rem;
 	color: var(--espuma);
+}
+
+.carrousel-mobile {
+    display: none;
 }
 
 /* ==================================================
@@ -1377,8 +1385,39 @@ footer {
 
 	/* CARRUSEL */
 
-	.carrousel {
-		height: fit-content;
+	.carrousel { 
+    display: none;
+    }
+     
+	.carrousel-mobile {
+    display: block;
+    width: 100%;
+	}
+
+	.carrousel-mobile .slider-container {
+    width: 100%;
+    aspect-ratio: 360 / 94; 
+    overflow: hidden; 
+	}
+
+	.carrousel-mobile .slider-mobile {
+    display: flex;       
+    width: 300%;         
+    height: 100%;  
+	}
+
+	.carrousel-mobile .slide {
+    width: 100%;
+    height: 100%;
+	}
+
+	.texto-banner h2 {
+	font-size: 1.8rem;
+	}
+
+	.texto-banner p {
+	font-size: 1rem;
+	color: var(--espuma);
 	}
 
 	/* SOLAPAS */

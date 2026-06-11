@@ -20,8 +20,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 5 segundos
     setInterval(moverSlider, 4000);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderMobile = document.querySelector('.slider-mobile');
+    let index = 0;
+
+    function moverMobile() {
+        index++;
+        
+        if (index >= 3) index = 0; 
+        
+        sliderMobile.style.transition = "transform 0.5s ease-in-out";        
+        sliderMobile.style.transform = `translateX(-${index * 33.33}%)`;
+    }
+
+    setInterval(moverMobile, 4000);
 });
 
 /* carrousel videos */
