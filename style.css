@@ -743,6 +743,60 @@ nav {
 	line-height: 2rem;
 }
 
+
+/* ==================================================
+   DONDE COMER
+================================================== */
+
+.patita {
+	fill: var(--oceano);
+	width: 17px;
+	height: 19px;
+	flex-shrink: 0;
+}
+
+.contenido-donde-comer {
+	display: flex;
+	gap: 24px;
+	padding: 25px 0;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lugares-comer h3 {
+	color: var(--oceano);
+}
+
+.lugares-comer {
+	display: flex;
+	gap: 24px;
+	padding: 25px 0;
+	border-bottom: 1px solid var(--oceano);
+	max-width: 1250px;
+	justify-content: space-between;
+}
+
+.patita-lugar {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	width: 13%;
+}
+
+.direccion {
+	width: 8%;
+}
+
+.descripcion {
+	width: 35%;
+}
+
+.extra {
+	width: 10%;
+	font-weight: 600;
+	color: var(--piedrita);
+}
+
 /* ==================================================
    GALERÍA
 ================================================== */
@@ -1492,6 +1546,31 @@ footer {
 	.zorro:active {
 		content: url(img/solapas/fauna-zorro.jpg);
 	}
+
+	/* DONDE COMER */
+
+	.contenido-donde-comer {
+		padding: 20px 65px;
+	}
+
+	.lugares-comer {
+		flex-direction: column;
+	}
+
+	.patita-lugar,
+	.direccion,
+	.direccion,
+	.descripcion,
+	.extra {
+		width: 100%;
+	}
+
+	.patita-lugar,
+	.direccion,
+	.extra {
+		font-weight: 600;
+	}
+
 
 	/* CLIMA */
 
