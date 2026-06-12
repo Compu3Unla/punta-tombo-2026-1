@@ -301,7 +301,8 @@ nav {
 
 .mapas {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 3rem;
 	flex-wrap: wrap;
 	padding: 68px 0px;
 }
@@ -371,7 +372,7 @@ nav {
 
 .galeria-interna-info {
     display: flex;
-    align-items: flex-start; 
+    align-items: baseline; 
     gap: 3rem;
     margin-top: 1.5rem;
     padding: 20px;
@@ -395,7 +396,9 @@ nav {
 }
 
 .galeria-interna-titulo::before {
-	content: "♡";
+	content: url(img/svg/patita.svg);
+	width: 1.1rem;
+	height: auto;
 	font-size: 1.5rem;
 	line-height: 1;
 	color: var(--oceano);
@@ -779,13 +782,6 @@ nav {
    DONDE COMER
 ================================================== */
 
-.patita {
-	fill: var(--oceano);
-	width: 17px;
-	height: 19px;
-	flex-shrink: 0;
-}
-
 .contenido-donde-comer {
 	display: flex;
 	gap: 24px;
@@ -812,6 +808,13 @@ nav {
 	flex-direction: row;
 	gap: 10px;
 	width: 13%;
+}
+
+.patita-lugar::before {
+	content: url(img/svg/patita.svg);
+	width: 1.1rem;
+	height: auto;
+	flex-shrink: 0;
 }
 
 .direccion {
@@ -1006,6 +1009,10 @@ textarea {
 	background: var(--espuma);
 
 	resize: none;
+}
+
+textarea {
+	min-height: 250px;
 }
 
 .seccion-form {
