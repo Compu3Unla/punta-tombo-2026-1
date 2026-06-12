@@ -12,7 +12,7 @@ Nos propusimos rediseñar la identidad visual completa, con un estilo más relaj
 - Usamos html5 + css, y galerías con fancybox
 - Probamos algunas cosas más complejas, algunos scripts extra, y animaciones
 
-- **Qué falta:**
+**Qué falta:**
 - Depurar un poco más el CSS
 - Revisar todos los htmls, revisar tags, revisar nombres de clases e ids
 - Mejorar algunos detalles y tamaños en mobile
