@@ -839,9 +839,14 @@ nav {
 	padding: 75px 0px;
 }
 
+.titulos h1 {
+	text-align: center;
+}
+
 .titulos h3 {
 	color: var(--espuma);
 	padding-top: 25px;
+	text-align: center;
 }
 
 #galeria {
@@ -1714,6 +1719,10 @@ footer {
 
 	.titulos {
 		padding: 20px 0;
+	}
+
+	.titulos h1 .titulos h3 {
+		text-align: center !important;
 	}
 
 	#fancybox a {
