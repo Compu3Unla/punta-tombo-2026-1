@@ -13,9 +13,9 @@ Nos propusimos rediseñar la identidad visual completa, con un estilo más relaj
 - Probamos algunas cosas más complejas, algunos scripts extra, y animaciones
 
 **Qué falta:**
-- Depurar un poco más el CSS
-- Revisar todos los htmls, revisar tags, revisar nombres de clases e ids
-- Mejorar algunos detalles y tamaños en mobile
+- Depurar un poco más el CSS y HTML
+- Revisar y corregir tags, nombres de clases e ids
+- Mejorar algunos detalles y tamaños en mobile-desktop
 
 **Trabajamos con:**
 - Marian, Mai, Cande: Visual Studio Code & resolución 1920x1080
