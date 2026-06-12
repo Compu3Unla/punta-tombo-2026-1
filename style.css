@@ -372,7 +372,7 @@ nav {
 
 .galeria-interna-info {
 	display: flex;
-	align-items: flex-start;
+	align-items: baseline;
 	gap: 3rem;
 	margin-top: 1.5rem;
 	padding: 20px;
