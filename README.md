@@ -17,7 +17,7 @@ Nos propusimos rediseñar la identidad visual completa, con un estilo más relaj
 - Revisar todos los htmls, revisar tags, revisar nombres de clases e ids
 - Mejorar algunos detalles y tamaños en mobile
 
-- **Trabajamos con:**
+**Trabajamos con:**
 - Marian, Mai, Cande: Visual Studio Code & resolución 1920x1080
 - Ceci: Dreamweaver & resolución 1366x768
 
