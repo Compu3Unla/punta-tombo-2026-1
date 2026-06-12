@@ -1387,6 +1387,18 @@ footer {
 	.excursiones-completo {
 		grid-template-columns: repeat(2, auto);
 	}
+
+	/* MAPAS DEL INDEX */
+	
+	.mapas {
+		gap: 1.5rem;
+		padding: 50px 20px;
+	}
+
+	.videomap {
+		max-width: 600px;
+	}
+
 }
 
 /* ==================================================
