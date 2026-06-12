@@ -11,3 +11,15 @@ Nos propusimos rediseñar la identidad visual completa, con un estilo más relaj
 - Responsive para laptops 1366px en algunas páginas
 - Usamos html5 + css, y galerías con fancybox
 - Probamos algunas cosas más complejas, algunos scripts extra, y animaciones
+
+- **Qué falta:**
+- Depurar un poco más el CSS
+- Revisar todos los htmls, revisar tags, revisar nombres de clases e ids
+- Mejorar algunos detalles y tamaños en mobile
+
+- **Trabajamos con:**
+- Marian, Mai, Cande: Visual Studio Code & resolución 1920x1080
+- Ceci: Dreamweaver & resolución 1366x768
+
+**Link a maqueta en Figma:**
+https://www.figma.com/design/8RwNfdJqikfzAhlVmn5EsZ/G7---Punta-Tombo?node-id=809-209&t=WxyVUXfCYJF3LULS-1
