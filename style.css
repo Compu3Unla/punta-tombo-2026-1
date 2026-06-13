@@ -402,6 +402,7 @@ nav {
 	font-size: 1.5rem;
 	line-height: 1;
 	color: var(--oceano);
+	flex-shrink: 0;
 }
 
 .galeria-interna-descripcion {
@@ -793,7 +794,7 @@ nav {
 .contenido-donde-comer {
 	display: flex;
 	gap: 24px;
-	padding: 60px 0;
+	padding: 60px 60px;
 	flex-direction: column;
 	align-items: center;
 }
@@ -811,18 +812,9 @@ nav {
 	justify-content: space-between;
 }
 
-.patita-lugar {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
-	width: 13%;
-}
-
-.patita-lugar::before {
-	content: url(img/svg/patita.svg);
-	width: 1.1rem;
-	height: auto;
-	flex-shrink: 0;
+.comida {
+    width: 13%;
+    white-space: normal;
 }
 
 .direccion {
@@ -1711,14 +1703,13 @@ footer {
 	/* DONDE COMER */
 
 	.contenido-donde-comer {
-		padding: 20px 65px;
+		padding: 20px 45px;
 	}
 
 	.lugares-comer {
 		flex-direction: column;
 	}
 
-	.patita-lugar,
 	.direccion,
 	.direccion,
 	.descripcion,
@@ -1726,10 +1717,13 @@ footer {
 		width: 100%;
 	}
 
-	.patita-lugar,
 	.direccion,
 	.extra {
 		font-weight: 600;
+	}
+
+	.comida {
+		white-space: nowrap;
 	}
 
 
