@@ -17,6 +17,9 @@ Nos propusimos rediseñar la identidad visual completa, con un estilo más relaj
 - Revisar y corregir tags, nombres de clases e ids
 - Mejorar algunos detalles y tamaños en mobile-desktop
 
+**Notas responsive**
+- El widget del clima es externo, por tanto algunos tamaños tipográficos no pueden modificarse
+
 **Trabajamos con:**
 - Marian, Mai, Cande: Visual Studio Code & resolución 1920x1080
 - Ceci: Dreamweaver & resolución 1366x768
