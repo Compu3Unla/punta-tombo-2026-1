@@ -1,4 +1,4 @@
-/* CSS Document Punta Tombo diseñado por Grupo Siete */
+/* CSS Document Punta Tombo by Grupo Siete */
 @charset "utf-8";
 
 /* ==================================================
@@ -147,24 +147,24 @@ nav {
 	border-color: var(--magallanes);
 }
 
-#corazon {
+.corazon {
 	height: 32px;
 	width: auto;
 }
 
-#home {
+.home {
 	height: 25px;
 	width: auto;
 }
 
-#corazon,
-#home {
+.corazon,
+.home {
 	fill: var(--magallanes);
 	transition: 0.3s ease;
 }
 
-#corazon:hover,
-#home:hover {
+.corazon:hover,
+.home:hover {
 	fill: var(--espuma);
 }
 
