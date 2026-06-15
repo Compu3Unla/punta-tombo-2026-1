@@ -18,7 +18,7 @@ Nos propusimos rediseñar la identidad visual completa, con un estilo más relaj
 - Mejorar algunos detalles y tamaños en mobile-desktop
 
 **Notas responsive**
-- El widget del clima es externo, por tanto algunos tamaños tipográficos no pueden modificarse
+- El widget del clima es externo, por tanto algunos tamaños tipográficos no pueden modificarse ya que vienen por defecto
 
 **Trabajamos con:**
 - Marian, Mai, Cande: Visual Studio Code & resolución 1920x1080
