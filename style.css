@@ -320,7 +320,7 @@ nav {
 .mapa-texto {
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
+	gap: 35px;
 }
 
 .flecha-localizacion {
@@ -407,7 +407,7 @@ nav {
 }
 
 .galeria-interna-ubicacion p {
-	font: size 1rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -726,10 +726,10 @@ nav {
 	min-width: 0;
 	flex-shrink: 1;
 }
-
+/*
 .mapa-texto {
 	gap: 35px;
-}
+}*/
 
 #mapa-turista h4 {
 	margin-bottom: 15px;
@@ -1198,7 +1198,6 @@ aside img {
 	animation: rebote 0.4s ease;
 }
 
-.detalle-producto,
 .meme-popup {
 	display: none;
 }
@@ -1684,7 +1683,6 @@ footer {
 	}
 
 	.direccion,
-	.direccion,
 	.descripcion,
 	.extra {
 		width: 100%;
@@ -1724,7 +1722,8 @@ footer {
 		padding: 20px 0;
 	}
 
-	.titulos h1 .titulos h3 {
+	.titulos h1,
+	.titulos h3 {
 		text-align: center !important;
 	}
 
@@ -1744,7 +1743,7 @@ footer {
 	.pingu-curiosidades {
 		display: flex;
 		gap: 25px;
-		padding: 15px 25px;
+		padding: 60px 25px;
 	}
 
 	.pingu-svg {
@@ -1934,12 +1933,5 @@ footer {
 
 	.footer-seccion p {
 		display: none;
-	}
-
-	/* ESTACIONES ANTES DEL FOOTER */
-
-	.pingu-curiosidades {
-		padding-top: 60px;
-		padding-bottom: 60px;
 	}
 }
