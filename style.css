@@ -1579,10 +1579,6 @@ footer {
 		padding: 40px 25px;
 	}
 
-	#mapa-turista .mapa-texto {
-		max-width: 100%;
-	}
-
 	#mapa-turista h2 {
 		font-size: 1.1rem;
 		text-align: center;
@@ -1602,6 +1598,12 @@ footer {
 		max-width: 100%;
 	}
 
+	#mapa-turista .mapas img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+	
 	/*galeria solapas*/
 
 	.galeria-interna {
@@ -1961,5 +1963,12 @@ footer {
 
 	.footer-seccion p {
 		display: none;
+	}
+	
+	/* ESTACIONES ANTES DEL FOOTER */
+	
+		.pingu-curiosidades {
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 }
