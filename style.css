@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'baserio';
-	src: url('./fonts/Baserio-Regular.otf') format('opentype');
+	src: url('./fonts/Baserio-Regular.otf') format('woff2'); /*al cambiar a opentype no se muestra el mobile*/
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
