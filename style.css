@@ -487,7 +487,6 @@ nav {
 .florayfauna-contenedor {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
-	grid-template-rows: repeat(2, auto);
 	justify-content: center;
 	gap: 24px;
 	padding: 45px;
@@ -502,6 +501,7 @@ nav {
 .tarjeta-fyf {
 	position: relative;
 	display: block;
+	transition: .4s ease;
 }
 
 .fyf-p {
@@ -509,16 +509,17 @@ nav {
 	bottom: 20px;
 	left: 10%;
 	z-index: 10;
-
 	color: var(--espuma);
 	opacity: 0;
-
 	pointer-events: none;
 	text-shadow: 0 2px 4px rgba(0, 0, 0, .8);
 }
 
+.tarjeta-fyf:hover {
+    transform: scale(1.02);
+}
 .tarjeta-fyf:hover .fyf-p {
-	opacity: 1;
+    opacity: 1;
 }
 
 .lobo:hover {
@@ -726,6 +727,7 @@ nav {
 	min-width: 0;
 	flex-shrink: 1;
 }
+
 /*
 .mapa-texto {
 	gap: 35px;
