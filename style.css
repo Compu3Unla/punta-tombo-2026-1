@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'baserio';
-	src: url('./fonts/Baserio-Regular.woff2') format('woff2');
+	src: url('fonts/Baserio-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -116,13 +116,13 @@ nav {
 }
 
 .nav-desktop {
-	display: flex !important;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .nav-mobile {
-	display: none !important;
+	display: none;
 }
 
 .menu {
@@ -384,7 +384,7 @@ nav {
 }
 
 .galeria-interna-titulo h3 {
-	color: var(--oceano) !important;
+	color: var(--oceano) 
 }
 
 .galeria-interna-titulo::before {
@@ -1395,11 +1395,11 @@ footer {
 	/* HEADER */
 
 	.nav-desktop {
-		display: none !important;
+		display: none;
 	}
 
 	.nav-mobile {
-		display: flex !important;
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 0;
@@ -1430,7 +1430,7 @@ footer {
 
 	.menu-desplegable {
 		display: none;
-		position: fixed !important;
+		position: fixed;
 		top: 65px;
 		left: 0;
 		width: 100%;
@@ -1441,7 +1441,7 @@ footer {
 		padding-bottom: 20px;
 		align-items: center;
 		gap: 20px;
-		z-index: 1000000 !important;
+		z-index: 1000000;
 	}
 
 	.menu-desplegable .boton {
@@ -1454,14 +1454,10 @@ footer {
 
 	#check-menu:checked~.menu-desplegable,
 	.nav-mobile #check-menu:checked~.menu-desplegable {
-		display: flex !important;
+		display: flex;
 	}
 
 	/* HERO */
-
-	.video-heroe {
-		height: fit-content;
-	}
 
 	.logo-hero {
 		width: 30%;
