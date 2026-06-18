@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'baserio';
-	src: url('./fonts/Baserio-Regular.otf') format('woff2'); /*al cambiar a opentype no se muestra el mobile*/
+	src: url('./fonts/Baserio-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -1460,7 +1460,7 @@ footer {
 	/* HERO */
 
 	.logo-hero {
-		width: 30%;
+		width: 60%;
 		top: 20px;
 		left: 20px;
 	}
