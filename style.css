@@ -1516,7 +1516,11 @@ footer {
 		border-bottom: 2px solid var(--magallanes);
 		color: var(--magallanes);
 	}
-
+	
+	.tab-btn:last-child {
+		border-bottom: none
+	}
+	
 	.tab-btn span {
 		order: 1;
 		font-size: 1.2rem;
