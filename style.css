@@ -1642,6 +1642,10 @@ footer {
 		border-radius: 20px;
 	}
 
+	.fyf-p {
+		font-size: 1rem;
+	}
+
 	.lobo:active {
 		content: url(img/solapas/fauna-lobo.jpg);
 	}
