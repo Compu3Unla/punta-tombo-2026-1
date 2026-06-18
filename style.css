@@ -1,4 +1,4 @@
-/* CSS Document Punta Tombo by Grupo Siete */
+/* CSS Punta Tombo diseñado por Grupo Siete */
 @charset "utf-8";
 
 /* ==================================================
@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'baserio';
-	src: url('./fonts/Baserio-Regular.otf') format('woff2');
+	src: url('./fonts/Baserio-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -516,10 +516,11 @@ nav {
 }
 
 .tarjeta-fyf:hover {
-    transform: scale(1.02);
+	transform: scale(1.02);
 }
+
 .tarjeta-fyf:hover .fyf-p {
-    opacity: 1;
+	opacity: 1;
 }
 
 .lobo:hover {
@@ -803,6 +804,10 @@ nav {
 	justify-content: space-between;
 }
 
+.lugares-comer:last-child {
+	border-bottom: none
+}
+
 .comida {
 	width: 13%;
 	white-space: normal;
@@ -1001,6 +1006,7 @@ textarea {
 	width: 100%;
 	max-width: 737px;
 }
+
 
 input[type="submit"] {
 	width: 150px;
@@ -1472,6 +1478,7 @@ footer {
 	.carrousel-mobile {
 		display: block;
 		width: 100%;
+		margin-bottom: -1px;
 	}
 
 	.carrousel-mobile .slider-container {
@@ -1516,11 +1523,11 @@ footer {
 		border-bottom: 2px solid var(--magallanes);
 		color: var(--magallanes);
 	}
-	
+
 	.tab-btn:last-child {
 		border-bottom: none
 	}
-	
+
 	.tab-btn span {
 		order: 1;
 		font-size: 1.2rem;
@@ -1737,15 +1744,24 @@ footer {
 		text-align: center !important;
 	}
 
+	#fancybox {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 40px;
+		gap: 20px;
+	}
+
 	#fancybox a {
-		width: 50%;
-		padding: 10px;
+		flex: 0 0 calc(50% - 10px);
 		box-sizing: border-box;
+		padding: 0;
 	}
 
 	#fancybox img {
 		width: 100%;
 		height: auto;
+		display: block;
+		border-radius: 15px;
 	}
 
 	/* CURIOSIDADES */
