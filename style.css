@@ -1565,7 +1565,7 @@ footer {
 	}
 
 	#mapa-turista {
-		padding: 40px 25px;
+		padding: 0px;
 	}
 
 	#mapa-turista h2 {
@@ -1580,17 +1580,22 @@ footer {
 		flex-direction: column;
 		gap: 30px;
 		align-items: center;
+		padding: 0;
 	}
 
 	#mapa-turista .mapa-texto {
 		width: 100%;
 		max-width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 25px;
 	}
-
+	
 	#mapa-turista .mapas img {
-		max-width: 100%;
 		width: 100%;
+		max-width: 100%;
 		height: auto;
+		border-radius: 0;
 	}
 
 	/*galeria solapas*/
