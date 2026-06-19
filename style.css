@@ -1487,11 +1487,11 @@ footer {
 		margin-bottom: -1px;
 	}
 
-.carrousel-mobile .slider-container {
-	width: 100%;
-	aspect-ratio: 360 / 150;
-	overflow: hidden;
-}
+	.carrousel-mobile .slider-container {
+		width: 100%;
+		aspect-ratio: 360 / 150;
+		overflow: hidden;
+	}
 
 	.carrousel-mobile .slider-mobile {
 		display: flex;
@@ -1513,7 +1513,7 @@ footer {
 		color: var(--espuma);
 		padding-top: 5px;
 	}
-	
+
 	.texto-banner {
 		right: 20px;
 		max-width: 60%;
@@ -1596,7 +1596,7 @@ footer {
 		padding-right: 25px;
 		padding-bottom: 25px;
 	}
-	
+
 	#mapa-turista .mapas img {
 		width: 100%;
 		max-width: 100%;
@@ -1809,6 +1809,7 @@ footer {
 	}
 
 	.globo::before {
+
 		width: 25px;
 		left: -25px;
 	}
