@@ -1489,7 +1489,7 @@ footer {
 
 .carrousel-mobile .slider-container {
 	width: 100%;
-	aspect-ratio: 360 / 120;
+	aspect-ratio: 360 / 150;
 	overflow: hidden;
 }
 
@@ -1511,6 +1511,7 @@ footer {
 	.texto-banner p {
 		font-size: 1rem;
 		color: var(--espuma);
+		padding-top: 5px;
 	}
 	
 	.texto-banner {
