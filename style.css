@@ -384,7 +384,7 @@ nav {
 }
 
 .galeria-interna-titulo h3 {
-	color: var(--oceano) 
+	color: var(--oceano)
 }
 
 .galeria-interna-titulo::before {
@@ -560,8 +560,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 50px 0px 70px;
-	gap: 30px;
+	padding: 22px 0px 70px;
 }
 
 .linea {
@@ -1054,6 +1053,7 @@ textarea::placeholder {
 .parrafos-contacto {
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 
 .parrafos-contacto p {
@@ -1061,7 +1061,7 @@ textarea::placeholder {
 }
 
 .parrafos-contacto div {
-	width: 281px;
+	max-width: 281px;
 }
 
 aside img {
@@ -1337,8 +1337,18 @@ footer {
 
 	/* FLORA Y FAUNA */
 
+	#flora.tab-content.active {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
 	.florayfauna-contenedor {
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(2, auto);
+		gap: 30px 40px;
+	}
+
+	.descubri-florayfauna {
+		padding: 55px 0px 0px;
 	}
 
 	/* GALERÍA INTERNA */
@@ -1639,8 +1649,14 @@ footer {
 
 	/* FLORA Y FAUNA */
 
+	#flora.tab-content.active {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
 	.florayfauna-contenedor {
 		grid-template-columns: repeat(2, auto);
+		gap: 24px;
 	}
 
 	.tarjeta-florayfauna {
@@ -1650,7 +1666,7 @@ footer {
 	}
 
 	.fyf-p {
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 
 	.lobo:active {
