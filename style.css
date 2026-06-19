@@ -1487,11 +1487,11 @@ footer {
 		margin-bottom: -1px;
 	}
 
-	.carrousel-mobile .slider-container {
-		width: 100%;
-		aspect-ratio: 360 / 94;
-		overflow: hidden;
-	}
+.carrousel-mobile .slider-container {
+	width: 100%;
+	aspect-ratio: 360 / 120;
+	overflow: hidden;
+}
 
 	.carrousel-mobile .slider-mobile {
 		display: flex;
@@ -1511,6 +1511,11 @@ footer {
 	.texto-banner p {
 		font-size: 1rem;
 		color: var(--espuma);
+	}
+	
+	.texto-banner {
+		right: 20px;
+		max-width: 60%;
 	}
 
 	/* SOLAPAS */
